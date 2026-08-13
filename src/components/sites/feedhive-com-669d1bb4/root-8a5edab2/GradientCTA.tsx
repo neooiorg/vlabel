@@ -1,7 +1,16 @@
 import Image from 'next/image'
 
+const BASE = '/sites/feedhive-com-669d1bb4/root-8a5edab2/images'
+
 export function GradientCTA() {
-  const brands = ['beehiiv', 'fauna', 'prismic', 'Senja', 'Riverside', 'thirdweb']
+  const brands = [
+    { name: 'Beehiiv', src: `${BASE}/beehiiv.webp` },
+    { name: 'Fauna', src: `${BASE}/fauna.webp` },
+    { name: 'Prismic', src: `${BASE}/prismic.webp` },
+    { name: 'Senja', src: `${BASE}/senja.webp` },
+    { name: 'Riverside', src: `${BASE}/riverside.webp` },
+    { name: 'thirdweb', src: `${BASE}/thirdweb.webp` },
+  ]
 
   return (
     <section className="bg-white px-4 pb-10 pt-7 sm:px-6 sm:pb-14 lg:px-8 lg:pb-[84px] lg:pt-10">
@@ -45,11 +54,16 @@ export function GradientCTA() {
                   <p>Cancel anytime.</p>
                 </div>
               </div>
-              <div className="mt-8 flex flex-wrap items-center gap-5">
+              <div className="mt-9 flex flex-wrap items-center gap-x-7 gap-y-4 lg:mt-11">
                 {brands.map((b) => (
-                  <span key={b} className="text-[13px] font-medium text-white/80">
-                    {b}
-                  </span>
+                  <Image
+                    key={b.name}
+                    src={b.src}
+                    alt={b.name}
+                    width={102}
+                    height={36}
+                    className="h-[26px] w-auto opacity-[0.88] [filter:brightness(0)_invert(1)]"
+                  />
                 ))}
               </div>
             </div>
