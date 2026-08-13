@@ -7,9 +7,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
-  --font-heading: var(--font-sans);
+  --font-sans: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-plus-jakarta-sans), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Fira Code", monospace;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -117,14 +117,84 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* FeedHive custom CSS */
+.fh-primary { color: #4457FF; }
+.fh-bg-primary { background-color: #4457FF; }
+
+@keyframes cta-gradient-shift {
+  from { --cta-border-angle: 0deg; }
+  to { --cta-border-angle: 360deg; }
+}
+
+@property --cta-border-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.cta-gradient-ring {
+  isolation: isolate;
+  --cta-border-angle: 0deg;
+  --cta-ring-inset: -4px;
+  --cta-ring-radius: 18px;
+  --cta-glow-inset: -6px;
+  --cta-glow-radius: 20px;
+  position: relative;
+}
+
+.cta-gradient-ring::before,
+.cta-gradient-ring::after {
+  content: "";
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.22s;
+  position: absolute;
+}
+
+.cta-gradient-ring::before {
+  inset: var(--cta-ring-inset);
+  border-radius: var(--cta-ring-radius);
+  z-index: 0;
+  background: conic-gradient(from var(--cta-border-angle), #4f7dff, #7165ff, #d650ff, #ff7f59, #4f7dff);
+  padding: 2.75px;
+  animation: 2.2s linear 0s infinite normal none paused cta-gradient-shift;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.cta-gradient-ring::after {
+  inset: var(--cta-glow-inset);
+  border-radius: var(--cta-glow-radius);
+  z-index: -1;
+  background: conic-gradient(from var(--cta-border-angle), #4f7dff80, #7165ff80, #d650ff80, #ff7f5980, #4f7dff80);
+  filter: blur(8px);
+  animation: 2.2s linear 0s infinite normal none paused cta-gradient-shift;
+}
+
+.cta-gradient-ring:hover::before,
+.cta-gradient-ring:hover::after {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.cta-gradient-ring-pill {
+  --cta-ring-radius: 9999px;
+  --cta-glow-radius: 9999px;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-[#20232b];
+    font-family: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif;
   }
   html {
     @apply font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-plus-jakarta-sans), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   }
 }
