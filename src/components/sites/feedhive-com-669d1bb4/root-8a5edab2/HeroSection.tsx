@@ -100,16 +100,16 @@ export function HeroSection() {
           <div className="relative z-10 pt-3 lg:pt-8">
             {/* Badge */}
             <div className="mb-6 inline-flex">
-              <span className="cta-gradient-ring cta-gradient-ring-pill inline-flex items-center gap-2 rounded-full border border-black/[0.06] bg-white px-3 py-1.5 text-[13px] font-[500] text-[#20232b] shadow-sm">
+              <span className="cta-gradient-ring cta-gradient-ring-pill inline-flex items-center gap-2 rounded-full border border-black/[0.06] bg-white px-3 py-1.5 text-[13px] font-medium text-[#20232b] shadow-sm">
                 Introducing FeedHive
-                <span className="rounded-full bg-[#eef0ff] px-2 py-0.5 text-[11px] font-[600] text-[#4457ff]">
+                <span className="rounded-full bg-[#eef0ff] px-2 py-0.5 text-[11px] font-semibold text-[#4457ff]">
                   v2.0
                 </span>
               </span>
             </div>
 
             {/* H1 */}
-            <h1 className="font-[var(--font-plus-jakarta-sans)] text-[48px] font-[600] leading-[1.02] tracking-[-0.035em] text-[#23252b] lg:text-[55px]">
+            <h1 className="text-[48px] font-semibold leading-[1.02] tracking-[-0.035em] text-[#23252b] lg:text-[55px]">
               Social media using
               <br />
               <span className="text-[#4457ff]">Automation &amp; AI Agents.</span>
@@ -134,7 +134,7 @@ export function HeroSection() {
                 >
                   <span className="mt-0.5 flex-shrink-0 text-[#4457ff]">✓</span>
                   <span>
-                    <strong className="font-[600]">{item.bold}</strong>
+                    <strong className="font-semibold">{item.bold}</strong>
                     {item.rest}
                   </span>
                 </li>
@@ -146,7 +146,7 @@ export function HeroSection() {
               <div className="cta-gradient-ring inline-flex rounded-[15px]">
                 <a
                   href="https://app.feedhive.com/signup"
-                  className="inline-flex h-[50px] items-center justify-center rounded-[15px] bg-[#4457ff] px-8 text-[15px] font-[500] tracking-[-0.03em] text-white transition-colors duration-300 hover:bg-[#4f5fd7]"
+                  className="inline-flex h-[50px] items-center justify-center rounded-[15px] bg-[#4457ff] px-8 text-[15px] font-medium tracking-[-0.03em] text-white transition-colors duration-300 hover:bg-[#4f5fd7]"
                 >
                   Get started for free
                 </a>
@@ -159,8 +159,8 @@ export function HeroSection() {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="relative flex min-h-[430px] items-start justify-end pt-2 lg:min-h-[680px] lg:pt-6">
-            <div className="relative w-[125%] overflow-hidden rounded-l-[16px]">
+          <div className="relative flex min-h-[430px] items-start justify-start pt-2 lg:min-h-[600px] lg:pt-6">
+            <div className="relative w-full shrink-0 overflow-hidden rounded-l-[16px] lg:w-[880px] lg:max-w-none">
               <Image
                 src={activeTabData.image}
                 alt={activeTabData.alt}
@@ -177,7 +177,7 @@ export function HeroSection() {
       {/* PART 2: Feature tabs section */}
       <div className="px-4 pb-10 pt-6 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-[1188px]">
-          <p className="mb-4 text-[11px] font-[700] uppercase tracking-[0.08em] text-[#767b84]">
+          <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.08em] text-[#767b84]">
             BUILD A CONTENT MACHINE FOR SOCIAL.
           </p>
           {/* Horizontally scrollable tabs on mobile */}
@@ -187,7 +187,7 @@ export function HeroSection() {
                 key={tab.label}
                 onClick={() => setActiveTab(tab.label)}
                 className={cn(
-                  'rounded-full border px-3.5 py-1.5 text-[13px] font-[500] transition-colors duration-200',
+                  'rounded-full border px-3.5 py-1.5 text-[13px] font-medium transition-colors duration-200',
                   activeTab === tab.label
                     ? 'border-[#4457ff]/20 bg-[#eef0ff] text-[#4457ff]'
                     : 'border-transparent text-[#767b84] hover:text-[#20232b]'

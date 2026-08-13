@@ -3,11 +3,11 @@ export function VideoSection() {
     <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-[1188px]">
         <div className="mb-8 text-center">
-          <p className="mb-3 text-[11px] font-[700] uppercase tracking-[0.1em] text-[#4457ff]">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.1em] text-[#4457ff]">
             SEE FOR YOURSELF
           </p>
           <h2
-            className="text-[40px] font-[800] leading-[1.08] tracking-[-0.03em] text-[#20232b] lg:text-[52px]"
+            className="text-[40px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#20232b] lg:text-[52px]"
             style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
           >
             Creating content is this easy.

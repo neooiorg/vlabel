@@ -17,28 +17,28 @@ export function Navigation() {
         <nav className="hidden items-center gap-7 lg:flex">
           <a
             href="#"
-            className="flex items-center gap-1 text-[15px] font-[450] text-[#20232b] transition-colors hover:text-[#4457ff]"
+            className="flex items-center gap-1 text-[15px] font-medium text-[#20232b] transition-colors hover:text-[#4457ff]"
           >
             Product
             <ChevronDown className="h-3.5 w-3.5 opacity-50" />
           </a>
           <a
             href="#"
-            className="flex items-center gap-1 text-[15px] font-[450] text-[#20232b] transition-colors hover:text-[#4457ff]"
+            className="flex items-center gap-1 text-[15px] font-medium text-[#20232b] transition-colors hover:text-[#4457ff]"
           >
             Socials
             <ChevronDown className="h-3.5 w-3.5 opacity-50" />
           </a>
           <a
             href="#"
-            className="flex items-center gap-1 text-[15px] font-[450] text-[#20232b] transition-colors hover:text-[#4457ff]"
+            className="flex items-center gap-1 text-[15px] font-medium text-[#20232b] transition-colors hover:text-[#4457ff]"
           >
             Learn
             <ChevronDown className="h-3.5 w-3.5 opacity-50" />
           </a>
           <a
             href="#"
-            className="text-[15px] font-[450] text-[#20232b] transition-colors hover:text-[#4457ff]"
+            className="text-[15px] font-medium text-[#20232b] transition-colors hover:text-[#4457ff]"
           >
             Pricing
           </a>
@@ -48,13 +48,13 @@ export function Navigation() {
         <div className="flex items-center gap-2">
           <a
             href="https://app.feedhive.com/login"
-            className="hidden h-9 items-center rounded-[11px] border border-[#dfdfe4] px-[18px] text-[14px] font-[500] text-[#20232b] transition-colors hover:border-[#20232b] lg:inline-flex"
+            className="hidden h-9 items-center rounded-[11px] border border-[#dfdfe4] px-[18px] text-[14px] font-medium text-[#20232b] transition-colors hover:border-[#20232b] lg:inline-flex"
           >
             Login
           </a>
           <a
             href="https://app.feedhive.com/signup"
-            className="inline-flex h-9 items-center rounded-[11px] bg-[#4457ff] px-[18px] text-[14px] font-[500] text-white transition-colors duration-300 hover:bg-[#4F5FD7]"
+            className="inline-flex h-9 items-center rounded-[11px] bg-[#4457ff] px-[18px] text-[14px] font-medium text-white transition-colors duration-300 hover:bg-[#4F5FD7]"
           >
             Sign Up
           </a>

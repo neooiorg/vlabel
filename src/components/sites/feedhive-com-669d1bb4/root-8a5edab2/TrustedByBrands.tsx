@@ -14,7 +14,7 @@ export function TrustedByBrands() {
     <section className="bg-white px-4 py-7 sm:px-6 lg:px-8 lg:py-8">
       <div className="mx-auto max-w-[1188px]">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:gap-10">
-          <p className="shrink-0 text-[12px] font-[600] uppercase tracking-[0.06em] text-[#4f5562]">
+          <p className="shrink-0 text-[12px] font-semibold uppercase tracking-[0.06em] text-[#4f5562]">
             Trusted by the best
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-10">

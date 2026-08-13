@@ -6,11 +6,11 @@ export function SocialProof() {
       <div className="mx-auto max-w-[1188px]">
         {/* Header */}
         <div className="mb-10 text-center lg:mb-14">
-          <p className="mb-3 text-[11px] font-[700] uppercase tracking-[0.1em] text-[#4457ff]">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.1em] text-[#4457ff]">
             THE EFFECTS OF FEEDHIVE
           </p>
           <h2
-            className="text-[40px] font-[800] leading-[1.08] tracking-[-0.03em] text-[#20232b] lg:text-[52px]"
+            className="text-[40px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#20232b] lg:text-[52px]"
             style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
           >
             What happens when social
@@ -32,7 +32,7 @@ export function SocialProof() {
               &ldquo;FeedHive turned social into a channel that consistently drives traffic for
               us.&rdquo;
             </p>
-            <p className="mt-1 text-[14px] font-[500] text-[#4f5562]">Francis Russell</p>
+            <p className="mt-1 text-[14px] font-medium text-[#4f5562]">Francis Russell</p>
           </div>
         </div>
 
@@ -64,7 +64,7 @@ export function SocialProof() {
         <div className="mt-8 grid grid-cols-1 divide-y divide-black/5 lg:grid-cols-2 lg:divide-x lg:divide-y-0">
           <div className="py-8 text-center lg:pr-10">
             <h3
-              className="text-[22px] font-[700] text-[#20232b]"
+              className="text-[22px] font-bold text-[#20232b]"
               style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
             >
               Get more reach
@@ -75,7 +75,7 @@ export function SocialProof() {
           </div>
           <div className="py-8 text-center lg:pl-10">
             <h3
-              className="text-[22px] font-[700] text-[#20232b]"
+              className="text-[22px] font-bold text-[#20232b]"
               style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
             >
               Drive more traffic
