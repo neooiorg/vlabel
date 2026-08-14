@@ -73,7 +73,7 @@ export function SocialProof() {
                   key={step.number}
                   className="flex flex-col items-center bg-white px-6 pb-8 pt-7 text-center"
                 >
-                  <p className="mb-3 font-mono text-[13px] font-semibold text-[#c0c3cc]">
+                  <p className="mb-3 font-mono text-[13px] font-semibold text-[#4457ff]">
                     {step.number}.
                   </p>
                   <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-[13px] bg-[#eef0ff]">
