@@ -42,43 +42,14 @@ export function FeaturesGrid() {
 
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Consumer QR page mockup */}
-          <div className="overflow-hidden rounded-[22px] border border-black/5 bg-white shadow-sm">
-            <div className="flex items-center justify-between border-b border-black/5 px-5 py-3">
-              <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.1em] text-[#4457ff]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#22a06b]" />
-                Đã xác thực bởi Vlabel
-              </span>
-              <span className="rounded-full border border-black/10 px-2 py-0.5 text-[11px] font-semibold text-[#4f5562]">
-                VI / EN
-              </span>
-            </div>
-            <div className="px-5 pt-4">
-              <div className="flex flex-wrap gap-2">
-                {consumerTabs.map((t, i) => (
-                  <span
-                    key={t}
-                    className={`rounded-full px-3 py-1 text-[12px] font-medium ${
-                      i === 0
-                        ? 'bg-[#eef0ff] text-[#4457ff]'
-                        : 'border border-black/[0.08] text-[#767b84]'
-                    }`}
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
+          <div className="overflow-hidden rounded-[22px] border border-black/5 shadow-sm">
             <Image
               src="/sites/feedhive-com-669d1bb4/root-8a5edab2/images/analytics-hero-v2.png"
               alt="Trang QR cho người tiêu dùng"
               width={1200}
               height={800}
-              className="mt-4 h-auto w-full"
+              className="h-auto w-full"
             />
-            <div className="flex items-center justify-center gap-2 border-t border-black/5 bg-[#f7f8fb] py-2.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#4f5562]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#22a06b]" />
-              Đồng bộ truyxuatnguongoc.gov.vn
-            </div>
           </div>
 
           {/* Points */}
