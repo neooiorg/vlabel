@@ -1,48 +1,62 @@
 import Image from 'next/image'
+import { SectionHeading } from './SectionHeading'
 
-const panels = [
+interface Panel {
+  label: string
+  title: string
+  subtitle: string
+  bullets: string[]
+  image: string
+  alt: string
+  imageLeft: boolean
+}
+
+const panels: Panel[] = [
   {
-    label: 'CROSS-POSTING',
-    title: 'Publish everywhere from one place.',
-    desc: 'Turn one post into channel-ready versions for Instagram, LinkedIn, X, YouTube, and more - without rebuilding it for every platform.',
+    label: 'WEB · BẢNG ĐIỀU KHIỂN',
+    title: 'Quản trị tập trung trên web.',
+    subtitle: 'Cho quản lý, admin, cán bộ',
+    bullets: [
+      'Quản trị song ngữ Việt / Anh',
+      'Thiết kế Luồng & Sự kiện, soạn nhãn điện tử',
+      'Bảng tổng quan, nhật ký kiểm toán, duyệt & khoá',
+      'Sinh QR & nhập QR hàng loạt',
+    ],
     image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-image-1.webp',
-    alt: 'Cross-posting UI mockup',
+    alt: 'Bảng điều khiển web',
     imageLeft: true,
   },
   {
-    label: 'COLLABORATION',
-    title: 'Keep your team and content aligned.',
-    desc: 'Plan posts, review drafts, leave feedback, and approve content before it goes live.',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-image-2.webp',
-    alt: 'Team collaboration approval UI',
+    label: 'DI ĐỘNG · iOS / ANDROID',
+    title: 'Kê khai thực địa trên điện thoại.',
+    subtitle: 'Cho kê khai & giám sát thực địa',
+    bullets: [
+      'Danh sách công việc được giao, quét QR',
+      'Ghi Sự kiện kèm hình ảnh minh chứng & GPS',
+      'Luồng quản lý: trợ lý, bản đồ hành trình',
+      'Thông báo đẩy nhắc việc',
+    ],
+    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-social-inbox.webp',
+    alt: 'Ứng dụng di động kê khai thực địa',
     imageLeft: false,
-  },
-  {
-    label: 'AUTOMATION',
-    title: 'Automate the schedule behind the scenes.',
-    desc: 'Use posting plans, post conditions, and recycled content to keep your channels active without starting from scratch every day.',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/feature-image-4.webp',
-    alt: 'Automation rules and content queue',
-    imageLeft: true,
   },
 ]
 
 export function FeatureShowcase() {
   return (
     <section className="bg-white px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-[1188px]">
-        <div className="mb-12 text-center">
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.1em] text-[#4457ff]">
-            AI-POWERED SOCIAL MEDIA WORKFLOW
-          </p>
-          <h2
-            className="text-[40px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#20232b] lg:text-[52px]"
-            style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
-          >
-            Everything your social media
-            <br className="hidden lg:block" /> needs to keep moving.
-          </h2>
-        </div>
+      <div className="mx-auto max-w-[1188px] pt-16 sm:pt-20 lg:pt-[92px]">
+        <SectionHeading
+          className="mb-12"
+          eyebrow="05 · WEB + DI ĐỘNG"
+          title={
+            <>
+              Quản trị trên web,
+              <br className="hidden lg:block" /> thực địa trên điện thoại.
+            </>
+          }
+          desc="Hợp thực địa nơi mạng yếu: nhà máy, vùng trồng, kho."
+        />
         <div className="divide-y divide-black/5">
           {panels.map((panel) => (
             <div
@@ -67,21 +81,28 @@ export function FeatureShowcase() {
                   {panel.label}
                 </p>
                 <h3
-                  className="text-[26px] font-extrabold leading-[1.12] tracking-[-0.025em] text-[#20232b] lg:text-[30px]"
+                  className="text-[26px] font-medium leading-[1.12] tracking-[-0.025em] text-[#20232b] lg:text-[30px]"
                   style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
                 >
                   {panel.title}
                 </h3>
-                <p className="mt-3 text-[15px] leading-[1.6] text-[#4f5562]">{panel.desc}</p>
-                <a
-                  href="https://app.feedhive.com/signup"
-                  className="mt-5 inline-flex items-center rounded-[11px] border border-[#dfdfe4] px-5 py-2 text-[14px] font-medium text-[#20232b] transition-colors hover:border-[#20232b]"
-                >
-                  Get started
-                </a>
+                <p className="mt-2 text-[14px] font-semibold text-[#767b84]">{panel.subtitle}</p>
+                <ul className="mt-4 space-y-2.5">
+                  {panel.bullets.map((b) => (
+                    <li key={b} className="flex items-start gap-3 text-[15px] text-[#20232b]">
+                      <span className="mt-0.5 flex-shrink-0 text-[#4457ff]">✓</span>
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center pb-4">
+          <span className="rounded-full border border-black/[0.08] bg-[#f7f7f9] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-[#4f5562]">
+            Kê khai offline · Tự đồng bộ
+          </span>
         </div>
       </div>
     </section>

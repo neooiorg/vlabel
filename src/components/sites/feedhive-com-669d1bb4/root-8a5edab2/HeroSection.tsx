@@ -4,86 +4,40 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
+const IMG = '/sites/feedhive-com-669d1bb4/root-8a5edab2/images'
+
 const tabs = [
-  {
-    label: 'Composer',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-composer.webp',
-    alt: 'Composer interface preview',
-  },
-  {
-    label: 'AI Assistant',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-ai-assistant.webp',
-    alt: 'AI Assistant interface preview',
-  },
-  {
-    label: 'Automation',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-automation.webp',
-    alt: 'Automation interface preview',
-  },
-  {
-    label: 'Post Conditions',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-post-conditions.webp',
-    alt: 'Post Conditions interface preview',
-  },
-  {
-    label: 'Smart Scheduling',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-smart-scheduling.webp',
-    alt: 'Smart Scheduling interface preview',
-  },
-  {
-    label: 'Social Inbox',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-social-inbox.webp',
-    alt: 'Social Inbox interface preview',
-  },
-  {
-    label: 'Recycle Suggestions',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-recycle-suggestions.webp',
-    alt: 'Recycle Suggestions interface preview',
-  },
-  {
-    label: 'Analytics',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/analytics-hero.png',
-    alt: 'Analytics dashboard preview',
-  },
-  {
-    label: 'AI Design Library',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-ai-design-library.webp',
-    alt: 'AI Design Library interface preview',
-  },
-  {
-    label: 'OpenClaw',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-telegram.webp',
-    alt: 'OpenClaw workflow preview',
-  },
-  {
-    label: 'Claude Code',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/claude-code-terminal.webp',
-    alt: 'Claude Code workflow preview',
-  },
-  {
-    label: 'API / CLI',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/feedhive-api-cli-terminal.webp',
-    alt: 'API and CLI workflow preview',
-  },
+  { label: 'Truy xuất', image: `${IMG}/hero-composer.webp`, alt: 'Giao diện thiết kế luồng truy xuất' },
+  { label: 'Nhãn điện tử', image: `${IMG}/hero-ai-assistant.webp`, alt: 'Soạn nhãn điện tử' },
+  { label: 'QR công khai', image: `${IMG}/hero-automation.webp`, alt: 'Trang QR công khai xác thực' },
+  { label: 'Bản đồ hành trình', image: `${IMG}/hero-post-conditions.webp`, alt: 'Bản đồ hành trình sản phẩm' },
+  { label: 'Đa khách hàng', image: `${IMG}/hero-smart-scheduling.webp`, alt: 'Quản lý đa khách hàng' },
+  { label: 'Trợ lý dẫn dắt', image: `${IMG}/hero-social-inbox.webp`, alt: 'Trợ lý dẫn từng bước' },
+  { label: 'Quản lý lô', image: `${IMG}/hero-recycle-suggestions.webp`, alt: 'Quản lý lô sản phẩm' },
+  { label: 'Bảng tổng quan', image: `${IMG}/analytics-hero.png`, alt: 'Bảng tổng quan' },
+  { label: 'Thư viện nhãn', image: `${IMG}/hero-ai-design-library.webp`, alt: 'Thư viện nhãn' },
+  { label: 'Kê khai thực địa', image: `${IMG}/hero-telegram.webp`, alt: 'Kê khai thực địa trên di động' },
+  { label: 'API / Tích hợp', image: `${IMG}/claude-code-terminal.webp`, alt: 'API và tích hợp' },
+  { label: 'Nhật ký kiểm toán', image: `${IMG}/feedhive-api-cli-terminal.webp`, alt: 'Nhật ký kiểm toán' },
 ]
 
 const bulletItems = [
   {
-    bold: 'Create with AI.',
-    rest: ' Generate content that fits your tone-of-voice & brand.',
+    bold: 'Truy xuất.',
+    rest: ' Quét một mã QR, người tiêu dùng thấy hành trình đã ký — không cần app.',
   },
   {
-    bold: 'Automate.',
-    rest: ' Create advanced workflows and posting conditions.',
+    bold: 'Nhãn điện tử.',
+    rest: ' Soạn nhãn theo NĐ 37/2026, hệ thống bung đúng trường bắt buộc.',
   },
   {
-    bold: 'Collaborate.',
-    rest: ' Work together with humans and AI agents in one workspace.',
+    bold: 'Đa khách hàng.',
+    rest: ' Một nền tảng cho nhiều doanh nghiệp, hợp tác xã và địa phương.',
   },
 ]
 
 export function HeroSection() {
-  const [activeTab, setActiveTab] = useState('Composer')
+  const [activeTab, setActiveTab] = useState('Truy xuất')
 
   const activeTabData = tabs.find((t) => t.label === activeTab) ?? tabs[0]
 
@@ -101,29 +55,33 @@ export function HeroSection() {
             {/* Badge */}
             <div className="mb-6 inline-flex">
               <span className="cta-gradient-ring cta-gradient-ring-pill inline-flex items-center gap-2 rounded-full border border-black/[0.06] bg-white px-3 py-1.5 text-[13px] font-medium text-[#20232b] shadow-sm">
-                Introducing FeedHive
+                Đa khách hàng
                 <span className="rounded-full bg-[#eef0ff] px-2 py-0.5 text-[11px] font-semibold text-[#4457ff]">
-                  v2.0
+                  DN + Địa phương
                 </span>
               </span>
             </div>
 
             {/* H1 */}
-            <h1 className="text-[48px] font-semibold leading-[1.02] tracking-[-0.035em] text-[#23252b] lg:text-[55px]">
-              Social media using
+            <h1 className="text-[44px] font-medium uppercase leading-[1.06] tracking-[-0.035em] text-[#23252b] lg:text-[55px]">
+              Một mã QR.
               <br />
-              <span className="text-[#4457ff]">Automation &amp; AI Agents.</span>
+              <span className="inline-block">
+                <span className="text-[#4457ff]">Trọn nguồn gốc.</span>
+                <div
+                  className="mt-1 h-[3px] w-full"
+                  style={{
+                    backgroundImage:
+                      'repeating-linear-gradient(90deg, #4457ff 0, #4457ff 8px, transparent 8px, transparent 14px)',
+                    backgroundSize: '14px 3px',
+                  }}
+                />
+              </span>
             </h1>
 
-            {/* Dashed underline under "Automation & AI Agents." */}
-            <div
-              className="mt-1 h-[3px] w-full max-w-[470px] lg:max-w-[610px]"
-              style={{
-                backgroundImage:
-                  'repeating-linear-gradient(90deg, #4457ff 0, #4457ff 8px, transparent 8px, transparent 14px)',
-                backgroundSize: '14px 3px',
-              }}
-            />
+            <p className="mt-6 max-w-[520px] text-[16px] leading-[1.6] text-[#4f5562]">
+              Nhãn điện tử và truy xuất nguồn gốc cho doanh nghiệp và địa phương. Quét mã QR, người tiêu dùng thấy toàn bộ hành trình đã ký.
+            </p>
 
             {/* Bullet checklist */}
             <ul className="mt-6 space-y-2.5">
@@ -145,15 +103,14 @@ export function HeroSection() {
             <div className="mt-8 flex items-center gap-5">
               <div className="cta-gradient-ring inline-flex rounded-[15px]">
                 <a
-                  href="https://app.feedhive.com/signup"
+                  href="#tu-van"
                   className="inline-flex h-[50px] items-center justify-center rounded-[15px] bg-[#4457ff] px-8 text-[15px] font-medium tracking-[-0.03em] text-white transition-colors duration-300 hover:bg-[#4f5fd7]"
                 >
-                  Get started for free
+                  Dùng thử / Đăng ký
                 </a>
               </div>
               <div className="space-y-0.5 text-[13px] leading-5 tracking-[-0.015em] text-[#767b84]">
-                <p>Try for free.</p>
-                <p>Cancel anytime.</p>
+                <p>Dùng thử miễn phí, không cần thẻ.</p>
               </div>
             </div>
           </div>
@@ -178,9 +135,8 @@ export function HeroSection() {
       <div className="px-4 pb-10 pt-6 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-[1188px]">
           <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.08em] text-[#767b84]">
-            BUILD A CONTENT MACHINE FOR SOCIAL.
+            SÁU PHÂN HỆ · MỘT QR.
           </p>
-          {/* Horizontally scrollable tabs on mobile */}
           <div className="flex flex-wrap gap-2">
             {tabs.map((tab) => (
               <button

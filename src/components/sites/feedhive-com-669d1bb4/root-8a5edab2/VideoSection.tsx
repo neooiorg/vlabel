@@ -1,30 +1,77 @@
+import { SectionHeading } from './SectionHeading'
+
+interface Standard {
+  index: string
+  code: string
+  title: string
+  desc: string
+}
+
+const standards: Standard[] = [
+  {
+    index: '01',
+    code: 'GS1 EPCIS',
+    title: 'Dữ liệu sự kiện quốc tế',
+    desc: 'Ai · Ở đâu · Khi nào · Thông tin · Hình ảnh. Chuẩn toàn cầu cho sự kiện chuỗi cung ứng.',
+  },
+  {
+    index: '02',
+    code: 'NĐ 37/2026',
+    title: 'Nhãn điện tử',
+    desc: 'Nhóm hàng hoá & trường bắt buộc theo Phụ lục I, bung tự động.',
+  },
+  {
+    index: '03',
+    code: 'NĐ 43/2017',
+    title: 'Ghi nhãn hàng hoá',
+    desc: 'Nhãn phụ tiếng Việt, hiển thị cho người tiêu dùng như một phần của nhãn điện tử.',
+  },
+  {
+    index: '04',
+    code: 'CỔNG QG',
+    title: 'Đồng bộ xác thực',
+    desc: 'Đồng bộ lên Cổng truy xuất nguồn gốc quốc gia & Hệ thống Nhãn điện tử Quốc gia.',
+  },
+]
+
 export function VideoSection() {
   return (
-    <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <section id="tuan-thu" className="scroll-mt-24 bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-[1188px]">
-        <div className="mb-8 text-center">
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.1em] text-[#4457ff]">
-            SEE FOR YOURSELF
-          </p>
-          <h2
-            className="text-[40px] font-extrabold leading-[1.08] tracking-[-0.03em] text-[#20232b] lg:text-[52px]"
-            style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
-          >
-            Creating content is this easy.
-          </h2>
-        </div>
-        <div className="overflow-hidden rounded-[24px] border border-black/5 shadow-xl">
-          {/* Video placeholder — styled like the real video container */}
-          <div className="flex aspect-video items-center justify-center bg-[#17191f]">
-            <div className="text-center text-white/40">
-              <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-white/10">
-                <svg className="ml-1 h-7 w-7 fill-white" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
+        <SectionHeading
+          className="mb-10 lg:mb-14"
+          eyebrow="06 · TUÂN THỦ & TÍCH HỢP QUỐC GIA"
+          title={
+            <>
+              Chuẩn quốc tế,
+              <br className="hidden lg:block" /> tuân thủ nội địa.
+            </>
+          }
+          desc="Mỗi hành trình được “đóng dấu” xác thực và đồng bộ lên Cổng truy xuất nguồn gốc quốc gia và Hệ thống Nhãn điện tử Quốc gia."
+        />
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {standards.map((s) => (
+            <div
+              key={s.index}
+              className="rounded-[18px] border border-black/5 bg-[#f7f7f9] p-6"
+            >
+              <div className="mb-4 flex items-center gap-2">
+                <span className="inline-flex h-[22px] items-center rounded-full bg-[#4457ff] px-2 text-[11px] font-bold text-white">
+                  {s.index}
+                </span>
+                <span className="text-[12px] font-bold uppercase tracking-[0.06em] text-[#4457ff]">
+                  {s.code}
+                </span>
               </div>
-              <p className="text-sm">Product Demo Video</p>
+              <h3
+                className="text-[18px] font-bold text-[#20232b]"
+                style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
+              >
+                {s.title}
+              </h3>
+              <p className="mt-2 text-[14px] leading-[1.55] text-[#4f5562]">{s.desc}</p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

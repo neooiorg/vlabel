@@ -3,12 +3,13 @@ import { Navigation } from "@/components/sites/feedhive-com-669d1bb4/root-8a5eda
 import { HeroSection } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/HeroSection";
 import { TrustedByBrands } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/TrustedByBrands";
 import { HowItWorks } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/HowItWorks";
-import { VideoSection } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/VideoSection";
+import { AgenticWorkflows } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/AgenticWorkflows";
 import { SocialProof } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/SocialProof";
 import { SupportedSocials } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/SupportedSocials";
-import { AgenticWorkflows } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/AgenticWorkflows";
 import { FeatureShowcase } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/FeatureShowcase";
+import { VideoSection } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/VideoSection";
 import { FeaturesGrid } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/FeaturesGrid";
+import { FAQ } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/FAQ";
 import { GradientCTA } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/GradientCTA";
 import { Footer } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/Footer";
 
@@ -21,12 +22,13 @@ export default function Home() {
         <HeroSection />
         <TrustedByBrands />
         <HowItWorks />
-        <VideoSection />
+        <AgenticWorkflows />
         <SocialProof />
         <SupportedSocials />
-        <AgenticWorkflows />
         <FeatureShowcase />
+        <VideoSection />
         <FeaturesGrid />
+        <FAQ />
         <GradientCTA />
       </main>
       <Footer />

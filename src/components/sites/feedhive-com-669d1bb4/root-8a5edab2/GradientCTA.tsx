@@ -1,22 +1,23 @@
-import Image from 'next/image'
+'use client'
 
-const BASE = '/sites/feedhive-com-669d1bb4/root-8a5edab2/images'
+import { useState } from 'react'
+import { cn } from '@/lib/utils'
+import { SectionHeading } from './SectionHeading'
+
+const bullets = [
+  'Một QR: truy xuất + nhãn điện tử + nhãn phụ + doanh nghiệp',
+  'Chuẩn GS1 EPCIS + tuân thủ NĐ 37/43, có sẵn',
+  'Đa khách hàng cho địa phương, kê khai offline cho thực địa',
+]
 
 export function GradientCTA() {
-  const brands = [
-    { name: 'Beehiiv', src: `${BASE}/beehiiv.webp` },
-    { name: 'Fauna', src: `${BASE}/fauna.webp` },
-    { name: 'Prismic', src: `${BASE}/prismic.webp` },
-    { name: 'Senja', src: `${BASE}/senja.webp` },
-    { name: 'Riverside', src: `${BASE}/riverside.webp` },
-    { name: 'thirdweb', src: `${BASE}/thirdweb.webp` },
-  ]
+  const [rep, setRep] = useState<'business' | 'local'>('business')
 
   return (
-    <section className="bg-white px-4 pb-10 pt-7 sm:px-6 sm:pb-14 lg:px-8 lg:pb-[84px] lg:pt-10">
+    <section id="tu-van" className="scroll-mt-24 bg-white px-4 pb-10 pt-7 sm:px-6 sm:pb-14 lg:px-8 lg:pb-[84px] lg:pt-10">
       <div className="mx-auto max-w-[1248px]">
         <div
-          className="relative overflow-hidden rounded-[34px] px-6 pt-10 sm:px-10 sm:pt-12 lg:px-[56px] lg:pt-[46px]"
+          className="relative overflow-hidden rounded-[34px] px-6 py-10 sm:px-10 sm:py-12 lg:px-[56px] lg:py-[56px]"
           style={{
             backgroundImage:
               'linear-gradient(135deg, #4e7cff 0%, #9f4bff 24%, #d54a96 58%, #ed7d3f 100%)',
@@ -28,58 +29,97 @@ export function GradientCTA() {
             className="pointer-events-none absolute inset-0"
             style={{
               backgroundImage:
-                'radial-gradient(circle at 12% 22%, rgba(255,255,255,0.55), transparent 17%), radial-gradient(circle at 82% 20%, rgba(255,255,255,0.14), transparent 22%), radial-gradient(circle at 78% 100%, rgba(86,74,255,0.5), transparent 24%), linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0))',
+                'radial-gradient(circle at 12% 22%, rgba(255,255,255,0.45), transparent 17%), radial-gradient(circle at 82% 20%, rgba(255,255,255,0.12), transparent 22%), radial-gradient(circle at 78% 100%, rgba(86,74,255,0.5), transparent 24%), linear-gradient(to bottom, rgba(255,255,255,0.12), rgba(255,255,255,0))',
             }}
           />
-          <div className="relative z-10 flex flex-col items-start gap-8 lg:flex-row lg:items-start lg:justify-between">
-            <div className="max-w-[540px]">
-              <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.1em] text-white/70">
-                GET STARTED.
+
+          <div className="relative z-10 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_minmax(0,480px)] lg:gap-14">
+            {/* Left — copy */}
+            <div className="max-w-[520px]">
+              <SectionHeading
+                align="left"
+                tone="light"
+                eyebrow="09 · BẮT ĐẦU"
+                title="Đưa nguồn gốc xác thực lên sản phẩm của bạn."
+              />
+              <p className="mt-4 text-[16px] leading-[1.6] text-white/85">
+                Để lại thông tin, Vlabel liên hệ khảo sát và báo giá — cho cả doanh nghiệp và địa phương.
               </p>
-              <h2
-                className="text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] text-white lg:text-[44px]"
-                style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
-              >
-                Try FeedHive for free and watch it transform your social media presence.
-              </h2>
-              <div className="mt-8 flex items-center gap-4">
-                <a
-                  href="https://app.feedhive.com/signup"
-                  className="inline-flex h-[52px] items-center justify-center rounded-[16px] bg-white px-7 text-[16px] font-semibold text-[#24262d] transition-opacity hover:opacity-90"
-                >
-                  Get started. It&apos;s FREE
-                </a>
-                <div className="text-[13px] leading-[1.5] text-white/70">
-                  <p>Try for free.</p>
-                  <p>Cancel anytime.</p>
-                </div>
-              </div>
-              <div className="mt-9 flex flex-wrap items-center gap-x-7 gap-y-4 lg:mt-11">
-                {brands.map((b) => (
-                  <Image
-                    key={b.name}
-                    src={b.src}
-                    alt={b.name}
-                    width={102}
-                    height={36}
-                    className="h-[26px] w-auto opacity-[0.88] [filter:brightness(0)_invert(1)]"
-                  />
+              <ul className="mt-6 space-y-3">
+                {bullets.map((b) => (
+                  <li key={b} className="flex items-start gap-3 text-[15px] text-white/90">
+                    <span className="mt-0.5 flex-shrink-0 text-white">✓</span>
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Right — form */}
+            <div className="rounded-[22px] bg-white p-6 shadow-[0_28px_60px_-24px_rgba(20,23,45,0.45)] sm:p-7">
+              <p className="text-[13px] font-semibold text-[#4f5562]">Tôi đại diện cho…</p>
+              <div className="mt-2 grid grid-cols-2 gap-2 rounded-[12px] bg-[#f1f2f6] p-1">
+                {(
+                  [
+                    { key: 'business', label: 'Doanh nghiệp' },
+                    { key: 'local', label: 'Địa phương' },
+                  ] as const
+                ).map((opt) => (
+                  <button
+                    key={opt.key}
+                    type="button"
+                    onClick={() => setRep(opt.key)}
+                    className={cn(
+                      'rounded-[9px] py-2 text-[14px] font-semibold transition-colors',
+                      rep === opt.key
+                        ? 'bg-white text-[#4457ff] shadow-sm'
+                        : 'text-[#767b84] hover:text-[#20232b]'
+                    )}
+                  >
+                    {opt.label}
+                  </button>
                 ))}
               </div>
+
+              <form className="mt-5 space-y-4" onSubmit={(e) => e.preventDefault()}>
+                <Field label="Họ và tên *" placeholder="Nguyễn Văn A" />
+                <Field label="Đơn vị / tổ chức *" placeholder="Công ty / HTX / Sở…" />
+                <Field label="Email hoặc điện thoại *" placeholder="you@email.com · 09xx xxx xxx" />
+                <div>
+                  <label className="mb-1.5 block text-[13px] font-medium text-[#20232b]">Nhu cầu</label>
+                  <textarea
+                    rows={3}
+                    placeholder="Loại sản phẩm, số SKU, mong muốn về truy xuất / nhãn điện tử…"
+                    className="w-full resize-none rounded-[12px] border border-[#dfdfe4] px-4 py-2.5 text-[14px] text-[#20232b] outline-none transition-colors placeholder:text-[#9fa3af] focus:border-[#4457ff]"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="inline-flex h-[50px] w-full items-center justify-center rounded-[14px] bg-[#4457ff] text-[15px] font-semibold text-white transition-colors duration-300 hover:bg-[#4f5fd7]"
+                >
+                  Gửi yêu cầu tư vấn
+                </button>
+                <p className="text-center text-[12px] font-semibold uppercase tracking-[0.06em] text-[#9fa3af]">
+                  Hoặc gọi 0369 777 713 · contact@vlabel.vn
+                </p>
+              </form>
             </div>
-          </div>
-          {/* Bottom product screenshot */}
-          <div className="relative z-10 mt-10 overflow-hidden rounded-t-[16px]">
-            <Image
-              src="/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-ai-assistant.webp"
-              alt="FeedHive AI Assistant"
-              width={1200}
-              height={700}
-              className="h-auto w-full"
-            />
           </div>
         </div>
       </div>
     </section>
+  )
+}
+
+function Field({ label, placeholder }: { label: string; placeholder: string }) {
+  return (
+    <div>
+      <label className="mb-1.5 block text-[13px] font-medium text-[#20232b]">{label}</label>
+      <input
+        type="text"
+        placeholder={placeholder}
+        className="w-full rounded-[12px] border border-[#dfdfe4] px-4 py-2.5 text-[14px] text-[#20232b] outline-none transition-colors placeholder:text-[#9fa3af] focus:border-[#4457ff]"
+      />
+    </div>
   )
 }
