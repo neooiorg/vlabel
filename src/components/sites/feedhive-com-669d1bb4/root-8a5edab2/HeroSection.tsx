@@ -90,12 +90,13 @@ export function HeroSection() {
 
           {/* RIGHT COLUMN */}
           <div className="relative flex min-h-[430px] items-start justify-start pt-2 lg:min-h-[600px] lg:pt-6">
-            <div className="relative w-full shrink-0 overflow-hidden rounded-l-[16px] lg:w-[880px] lg:max-w-none">
+            <div className="relative w-full shrink-0 overflow-hidden rounded-l-[10px] lg:w-[880px] lg:max-w-none">
               <Image
                 src={`${IMG}/hero-traceability.png`}
                 alt="Quét mã QR, truy xuất nguồn gốc toàn chuỗi cung ứng"
                 width={1600}
                 height={1067}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 880px"
                 className="h-auto w-full"
                 priority
               />

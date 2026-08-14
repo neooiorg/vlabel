@@ -28,6 +28,7 @@ export function Navigation() {
               alt="Vlabel"
               width={34}
               height={38}
+              sizes="40px"
               className="h-9 w-auto"
               priority
             />
@@ -101,6 +102,7 @@ export function Navigation() {
                   alt="Vlabel"
                   width={28}
                   height={32}
+                  sizes="32px"
                   className="h-7 w-auto"
                 />
                 <span className="text-[17px] font-bold tracking-[-0.02em] text-[#20232b]">

@@ -129,6 +129,7 @@ export function AgenticWorkflows() {
                     src={card.image}
                     alt={card.alt}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover object-top"
                   />
                 </div>

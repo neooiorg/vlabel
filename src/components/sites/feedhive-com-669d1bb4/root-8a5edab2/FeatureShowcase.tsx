@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { SectionHeading } from './SectionHeading'
+import { AnimateIn } from '@/components/AnimateIn'
 
 interface Panel {
   label: string
@@ -46,17 +47,19 @@ export function FeatureShowcase() {
   return (
     <section className="bg-white px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-[1188px] pt-16 sm:pt-20 lg:pt-[92px]">
-        <SectionHeading
-          className="mb-12"
-          eyebrow="05 · WEB + DI ĐỘNG"
+        <AnimateIn>
+          <SectionHeading
+            className="mb-12"
+            eyebrow="05 · WEB + DI ĐỘNG"
           title={
             <>
               Quản trị trên web,
               <br className="hidden lg:block" /> thực địa trên điện thoại.
             </>
           }
-          desc="Hỗ trợ thực địa nơi mạng yếu: nhà máy, vùng trồng, kho."
-        />
+            desc="Hỗ trợ thực địa nơi mạng yếu: nhà máy, vùng trồng, kho."
+          />
+        </AnimateIn>
         <div className="divide-y divide-black/5">
           {panels.map((panel) => (
             <div
@@ -67,12 +70,13 @@ export function FeatureShowcase() {
                   : ''
               }`}
             >
-              <div className="overflow-hidden rounded-[20px] border border-black/5 bg-[#f7f7f9]">
+              <div className="overflow-hidden rounded-[12px] border border-white/70 bg-[#f7f7f9] shadow-[0_0_0_1px_rgba(0,0,0,0.07),inset_0_1px_0_rgba(255,255,255,0.95)]">
                 <Image
                   src={panel.image}
                   alt={panel.alt}
                   width={800}
                   height={600}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="h-auto w-full"
                 />
               </div>

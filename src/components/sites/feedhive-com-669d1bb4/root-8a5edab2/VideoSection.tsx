@@ -1,4 +1,5 @@
 import { SectionHeading } from './SectionHeading'
+import { AnimateIn } from '@/components/AnimateIn'
 
 interface Standard {
   index: string
@@ -38,17 +39,20 @@ export function VideoSection() {
   return (
     <section id="tuan-thu" className="scroll-mt-24 bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-[1188px]">
-        <SectionHeading
-          className="mb-10 lg:mb-14"
-          eyebrow="06 · TUÂN THỦ & TÍCH HỢP QUỐC GIA"
+        <AnimateIn>
+          <SectionHeading
+            className="mb-10 lg:mb-14"
+            eyebrow="06 · TUÂN THỦ & TÍCH HỢP QUỐC GIA"
           title={
             <>
               Chuẩn quốc tế,
               <br className="hidden lg:block" /> tuân thủ nội địa.
             </>
           }
-          desc={"Mỗi sự kiện được ký và đồng bộ lên Cổng truy xuất nguồn gốc quốc gia và Hệ thống Nhãn điện tử Quốc gia."}
-        />
+            desc={"Mỗi sự kiện được ký và đồng bộ lên Cổng truy xuất nguồn gốc quốc gia và Hệ thống Nhãn điện tử Quốc gia."}
+          />
+        </AnimateIn>
+        <AnimateIn delay={100}>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {standards.map((s) => (
             <div
@@ -73,6 +77,7 @@ export function VideoSection() {
             </div>
           ))}
         </div>
+        </AnimateIn>
       </div>
     </section>
   )

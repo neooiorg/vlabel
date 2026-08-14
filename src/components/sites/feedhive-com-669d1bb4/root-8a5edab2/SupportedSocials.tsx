@@ -1,4 +1,5 @@
 import { SectionHeading } from './SectionHeading'
+import { AnimateIn } from '@/components/AnimateIn'
 
 interface Role {
   code: string
@@ -55,6 +56,7 @@ export function SupportedSocials() {
           desc="Mỗi vai trò chỉ thao tác trong phạm vi được giao — không hơn, không kém."
         />
 
+        <AnimateIn delay={80}>
         <div className="overflow-hidden rounded-[18px] border border-black/5">
           {/* Header row */}
           <div className="hidden grid-cols-[1.2fr_2fr_1.2fr] gap-4 bg-[#f7f7f9] px-6 py-4 lg:grid">
@@ -100,6 +102,7 @@ export function SupportedSocials() {
             ))}
           </div>
         </div>
+        </AnimateIn>
       </div>
     </section>
   )

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { SectionHeading } from './SectionHeading'
+import { AnimateIn } from '@/components/AnimateIn'
 
 interface Item {
   number: string
@@ -43,45 +44,50 @@ export function HowItWorks() {
       className="scroll-mt-24 bg-white px-4 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:px-8 lg:pb-[92px]"
     >
       <div className="mx-auto max-w-[1188px]">
-        <SectionHeading
-          className="mb-10 lg:mb-14"
-          eyebrow="01 · BÀI TOÁN → GIẢI PHÁP"
-          title="Ba vấn đề. Vlabel giải từng cái."
-          desc="Người tiêu dùng không phân biệt thật, giả. Doanh nghiệp phải tuân thủ ghi nhãn nhưng thiếu công cụ số hoá. Địa phương cần một hệ thống thống nhất cho nhiều doanh nghiệp."
-        />
-        <div className="grid grid-cols-1 divide-y divide-black/5 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
-          {items.map((item, i) => (
-            <div
-              key={item.number}
-              className={`flex flex-col items-center gap-6 py-10 lg:py-0 ${i > 0 ? 'lg:pl-10' : ''} ${i < 2 ? 'lg:pr-10' : ''}`}
-            >
-              <div className="w-full overflow-hidden rounded-[16px] border border-black/5 bg-white shadow-sm">
-                <Image
-                  src={item.image}
-                  alt={item.alt}
-                  width={1273}
-                  height={1101}
-                  className="h-auto w-full"
-                />
-              </div>
-              <div className="text-center">
-                <p className="text-[13px] font-semibold text-[#9fa3af]">{item.number}</p>
-                <h3
-                  className="mt-2 text-[17px] font-bold leading-[1.35] text-[#20232b]"
-                  style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
-                >
-                  {item.pain}
-                </h3>
-                <div className="mt-3 rounded-[12px] bg-[#eef0ff] px-4 py-3 text-left">
-                  <p className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#4457ff]">
-                    Vlabel
-                  </p>
-                  <p className="mt-1 text-[14px] leading-[1.5] text-[#20232b]">{item.solution}</p>
+        <AnimateIn>
+          <SectionHeading
+            className="mb-10 lg:mb-14"
+            eyebrow="01 · BÀI TOÁN → GIẢI PHÁP"
+            title="Ba vấn đề. Vlabel giải từng cái."
+            desc="Người tiêu dùng không phân biệt thật, giả. Doanh nghiệp phải tuân thủ ghi nhãn nhưng thiếu công cụ số hoá. Địa phương cần một hệ thống thống nhất cho nhiều doanh nghiệp."
+          />
+        </AnimateIn>
+        <AnimateIn delay={120}>
+          <div className="grid grid-cols-1 divide-y divide-black/5 md:grid-cols-3 md:divide-x md:divide-y-0">
+            {items.map((item, i) => (
+              <div
+                key={item.number}
+                className={`flex flex-col items-center gap-6 py-10 md:py-0 ${i > 0 ? 'md:pl-8 lg:pl-10' : ''} ${i < 2 ? 'md:pr-8 lg:pr-10' : ''}`}
+              >
+                <div className="w-full overflow-hidden rounded-[10px] border border-white/70 bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.07),inset_0_1px_0_rgba(255,255,255,0.95)]">
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    width={1273}
+                    height={1101}
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    className="h-auto w-full"
+                  />
+                </div>
+                <div className="text-center">
+                  <p className="text-[13px] font-semibold text-[#9fa3af]">{item.number}</p>
+                  <h3
+                    className="mt-2 text-[17px] font-bold leading-[1.35] text-[#20232b]"
+                    style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
+                  >
+                    {item.pain}
+                  </h3>
+                  <div className="mt-3 rounded-[12px] bg-[#eef0ff] px-4 py-3 text-left">
+                    <p className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#4457ff]">
+                      Vlabel
+                    </p>
+                    <p className="mt-1 text-[14px] leading-[1.5] text-[#20232b]">{item.solution}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </AnimateIn>
       </div>
     </section>
   )

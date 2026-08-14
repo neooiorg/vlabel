@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import "./globals.css";
+import { PageTransition } from "@/components/PageTransition";
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -24,7 +25,9 @@ export default function RootLayout({
       lang="vi"
       className={`${archivo.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-[#20232b]">{children}</body>
+      <body className="min-h-full flex flex-col bg-white text-[#20232b]">
+        <PageTransition>{children}</PageTransition>
+      </body>
     </html>
   );
 }

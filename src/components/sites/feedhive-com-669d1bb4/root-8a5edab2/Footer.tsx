@@ -27,6 +27,7 @@ function Logo() {
         alt="Vlabel"
         width={34}
         height={38}
+        sizes="40px"
         className="h-8 w-auto"
       />
       <span
@@ -70,7 +71,7 @@ export function Footer() {
     <footer className="bg-white px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-[1188px]">
         <div className="border-t border-black/5 pt-12">
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-[280px_1fr_1fr_1.4fr]">
+          <div className="grid grid-cols-2 gap-8 lg:grid-cols-[auto_1fr_1fr_1.4fr]">
             {/* Brand column */}
             <div className="col-span-2 lg:col-span-1">
               <Logo />

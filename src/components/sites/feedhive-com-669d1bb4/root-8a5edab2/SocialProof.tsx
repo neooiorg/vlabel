@@ -1,4 +1,5 @@
 import { Users, GitBranch, QrCode, Lock, Smartphone, type LucideIcon } from 'lucide-react'
+import { AnimateIn } from '@/components/AnimateIn'
 
 interface Step {
   number: string
@@ -64,6 +65,7 @@ export function SocialProof() {
         </div>
 
         {/* Steps strip */}
+        <AnimateIn delay={80}>
         <div className="relative overflow-hidden rounded-[15px] bg-[#ebebef]">
           <div className="grid gap-px grid-cols-1 lg:grid-cols-5">
             {steps.map((step) => {
@@ -90,6 +92,7 @@ export function SocialProof() {
             })}
           </div>
         </div>
+        </AnimateIn>
       </div>
     </section>
   )

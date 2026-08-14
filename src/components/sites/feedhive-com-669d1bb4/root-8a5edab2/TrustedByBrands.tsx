@@ -25,6 +25,7 @@ export function TrustedByBrands() {
                 alt={b.alt}
                 width={120}
                 height={32}
+                sizes="120px"
                 className="h-6 w-auto opacity-60 grayscale"
               />
             ))}

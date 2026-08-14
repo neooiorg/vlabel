@@ -75,7 +75,7 @@ export function LegalFramework() {
           </div>
 
           {/* Right — image */}
-          <div className="overflow-hidden rounded-[22px] border border-black/5 shadow-sm">
+          <div className="overflow-hidden rounded-[14px] border border-white/70 shadow-[0_0_0_1px_rgba(0,0,0,0.07),inset_0_1px_0_rgba(255,255,255,0.95)]">
             <Image
               src={`${IMG}/feature-image-5-v2.png`}
               alt="Soạn nhãn điện tử theo NĐ 37/2026"

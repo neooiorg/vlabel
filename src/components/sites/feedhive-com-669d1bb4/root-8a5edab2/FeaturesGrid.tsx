@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { SectionHeading } from './SectionHeading'
+import { AnimateIn } from '@/components/AnimateIn'
 
 const points = [
   {
@@ -28,26 +29,30 @@ export function FeaturesGrid() {
       className="scroll-mt-24 bg-[#f7f7f9] px-4 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-20 lg:px-8 lg:pb-[92px] lg:pt-[92px]"
     >
       <div className="mx-auto max-w-[1188px]">
-        <SectionHeading
-          className="mb-10 lg:mb-14"
-          eyebrow="07 · TRẢI NGHIỆM NGƯỜI TIÊU DÙNG"
-          title={
-            <>
-              Một lần quét,
-              <br className="hidden lg:block" /> trọn câu chuyện.
-            </>
-          }
-          desc="Quét QR ra trang song ngữ Việt/Anh: thông tin sản phẩm, nhãn điện tử, hành trình truy xuất và doanh nghiệp chịu trách nhiệm — không cần app, không cần đăng nhập."
-        />
+        <AnimateIn>
+          <SectionHeading
+            className="mb-10 lg:mb-14"
+            eyebrow="07 · TRẢI NGHIỆM NGƯỜI TIÊU DÙNG"
+            title={
+              <>
+                Một lần quét,
+                <br className="hidden lg:block" /> trọn câu chuyện.
+              </>
+            }
+            desc="Quét QR ra trang song ngữ Việt/Anh: thông tin sản phẩm, nhãn điện tử, hành trình truy xuất và doanh nghiệp chịu trách nhiệm — không cần app, không cần đăng nhập."
+          />
+        </AnimateIn>
 
+        <AnimateIn delay={100}>
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Consumer QR page mockup */}
-          <div className="overflow-hidden rounded-[22px] border border-black/5 shadow-sm">
+          <div className="overflow-hidden rounded-[14px] border border-white/70 shadow-[0_0_0_1px_rgba(0,0,0,0.07),inset_0_1px_0_rgba(255,255,255,0.95)]">
             <Image
               src="/sites/feedhive-com-669d1bb4/root-8a5edab2/images/analytics-hero-v2.png"
               alt="Trang QR cho người tiêu dùng"
               width={1200}
               height={800}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="h-auto w-full"
             />
           </div>
@@ -75,6 +80,7 @@ export function FeaturesGrid() {
             ))}
           </div>
         </div>
+        </AnimateIn>
       </div>
     </section>
   )
