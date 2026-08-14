@@ -16,20 +16,14 @@ export function GradientCTA() {
   return (
     <section id="tu-van" className="scroll-mt-24 bg-white px-4 pb-10 pt-7 sm:px-6 sm:pb-14 lg:px-8 lg:pb-[84px] lg:pt-10">
       <div className="mx-auto max-w-[1248px]">
-        <div
-          className="relative overflow-hidden rounded-[34px] px-6 py-10 sm:px-10 sm:py-12 lg:px-[56px] lg:py-[56px]"
-          style={{
-            backgroundImage:
-              'linear-gradient(135deg, #4e7cff 0%, #9f4bff 24%, #d54a96 58%, #ed7d3f 100%)',
-          }}
-        >
-          {/* Radial light overlays */}
+        <div className="relative overflow-hidden rounded-[34px] bg-[#4457ff] px-6 py-10 sm:px-10 sm:py-12 lg:px-[56px] lg:py-[56px]">
+          {/* Subtle light overlay */}
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-0"
             style={{
               backgroundImage:
-                'radial-gradient(circle at 12% 22%, rgba(255,255,255,0.45), transparent 17%), radial-gradient(circle at 82% 20%, rgba(255,255,255,0.12), transparent 22%), radial-gradient(circle at 78% 100%, rgba(86,74,255,0.5), transparent 24%), linear-gradient(to bottom, rgba(255,255,255,0.12), rgba(255,255,255,0))',
+                'radial-gradient(ellipse at 15% 30%, rgba(255,255,255,0.12), transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(30,20,100,0.25), transparent 50%)',
             }}
           />
 
@@ -40,10 +34,10 @@ export function GradientCTA() {
                 align="left"
                 tone="light"
                 eyebrow="09 · BẮT ĐẦU"
-                title="Đưa nguồn gốc xác thực lên sản phẩm của bạn."
+                title="Gửi thông tin sản phẩm, Vlabel liên hệ trong ngày."
               />
               <p className="mt-4 text-[16px] leading-[1.6] text-white/85">
-                Để lại thông tin, Vlabel liên hệ khảo sát và báo giá — cho cả doanh nghiệp và địa phương.
+                Vlabel khảo sát và báo giá trong 24 giờ — cho doanh nghiệp và địa phương.
               </p>
               <ul className="mt-6 space-y-3">
                 {bullets.map((b) => (
@@ -95,7 +89,7 @@ export function GradientCTA() {
                 </div>
                 <button
                   type="submit"
-                  className="inline-flex h-[50px] w-full items-center justify-center rounded-[14px] bg-[#4457ff] text-[15px] font-semibold text-white transition-colors duration-300 hover:bg-[#4f5fd7]"
+                  className="inline-flex h-[50px] w-full items-center justify-center rounded-[14px] bg-[#20232b] text-[15px] font-semibold text-white transition-colors duration-300 hover:bg-[#2e3240]"
                 >
                   Gửi yêu cầu tư vấn
                 </button>

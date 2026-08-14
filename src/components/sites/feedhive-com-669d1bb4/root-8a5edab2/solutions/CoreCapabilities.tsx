@@ -15,14 +15,14 @@ interface Panel {
 const panels: Panel[] = [
   {
     label: 'NHÃN ĐIỆN TỬ',
-    title: 'Một mã, dữ liệu sống.',
-    desc: 'Nội dung nhãn sống trên mã QR, cập nhật bất cứ lúc nào mà không in lại bao bì.',
+    title: 'Nhãn chỉnh được mà không in lại bao bì.',
+    desc: 'Nội dung nhãn nằm trên mã QR, cập nhật ngay khi cần mà không phải in lại bao bì.',
     bullets: [
       'Cập nhật tức thì, lưu vết phiên bản',
       'Đa ngôn ngữ cho hàng xuất khẩu',
       'Giảm chữ phải in trên bao bì',
     ],
-    image: `${IMG}/showcase-image-2.webp`,
+    image: `${IMG}/showcase-image-2-v2.png`,
     alt: 'Soạn và cập nhật nhãn điện tử',
     imageLeft: true,
   },
@@ -35,7 +35,7 @@ const panels: Panel[] = [
       'Đồng bộ dữ liệu lên cổng quốc gia',
       'Hồ sơ sẵn cho Lệnh 248/249 và EU',
     ],
-    image: `${IMG}/showcase-image-1.webp`,
+    image: `${IMG}/showcase-image-1-v2.png`,
     alt: 'Bản đồ hành trình truy xuất',
     imageLeft: false,
   },

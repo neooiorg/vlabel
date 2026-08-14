@@ -59,7 +59,7 @@ export function FAQ() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="flex w-full items-center gap-4 px-5 py-5 text-left sm:px-6"
                 >
-                  <span className="font-mono text-[13px] font-semibold text-[#4457ff]">
+                  <span className="tabular-nums text-[13px] font-semibold text-[#4457ff]">
                     Q{i + 1}
                   </span>
                   <span

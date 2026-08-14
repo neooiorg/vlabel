@@ -32,8 +32,8 @@ export default function FaqRoutePage() {
         <FaqPage />
         <PageCTA
           eyebrow="BẮT ĐẦU"
-          title="Câu hỏi chưa có trong danh sách."
-          desc="Để lại thông tin, Vlabel giải đáp cụ thể theo trường hợp của bạn."
+          title="Câu hỏi của bạn chưa có ở đây."
+          desc="Gửi câu hỏi, Vlabel trả lời theo trường hợp của bạn."
           buttonLabel="Nhận tư vấn"
         />
       </main>

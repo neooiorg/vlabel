@@ -37,7 +37,7 @@ export function FeaturesGrid() {
               <br className="hidden lg:block" /> trọn câu chuyện.
             </>
           }
-          desc="Người tiêu dùng, kể cả khách nước ngoài, thấy thông tin sản phẩm, nội dung nhãn điện tử, hành trình truy xuất và doanh nghiệp chịu trách nhiệm, song ngữ ngay trên trang QR."
+          desc="Quét QR ra trang song ngữ Việt/Anh: thông tin sản phẩm, nhãn điện tử, hành trình truy xuất và doanh nghiệp chịu trách nhiệm — không cần app, không cần đăng nhập."
         />
 
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
@@ -46,7 +46,7 @@ export function FeaturesGrid() {
             <div className="flex items-center justify-between border-b border-black/5 px-5 py-3">
               <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.1em] text-[#4457ff]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#22a06b]" />
-                Đã xác thực · GS1 EPCIS · Vlabel
+                Đã xác thực bởi Vlabel
               </span>
               <span className="rounded-full border border-black/10 px-2 py-0.5 text-[11px] font-semibold text-[#4f5562]">
                 VI / EN
@@ -69,7 +69,7 @@ export function FeaturesGrid() {
               </div>
             </div>
             <Image
-              src="/sites/feedhive-com-669d1bb4/root-8a5edab2/images/analytics-hero.png"
+              src="/sites/feedhive-com-669d1bb4/root-8a5edab2/images/analytics-hero-v2.png"
               alt="Trang QR cho người tiêu dùng"
               width={1200}
               height={800}
@@ -77,7 +77,7 @@ export function FeaturesGrid() {
             />
             <div className="flex items-center justify-center gap-2 border-t border-black/5 bg-[#f7f8fb] py-2.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#4f5562]">
               <span className="h-1.5 w-1.5 rounded-full bg-[#22a06b]" />
-              Đã đồng bộ · Cổng quốc gia
+              Đồng bộ truyxuatnguongoc.gov.vn
             </div>
           </div>
 

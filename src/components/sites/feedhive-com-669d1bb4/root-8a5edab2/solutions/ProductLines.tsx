@@ -55,7 +55,7 @@ const rows: { label: string; values: (string | boolean)[] }[] = [
   { label: 'Đồng bộ cổng quốc gia', values: [true, true, true, true] },
   { label: 'Landing page tùy biến', values: ['Cơ bản', 'Đẹp theo thương hiệu', 'Toàn quyền', 'Theo mẫu'] },
   { label: 'Tùy biến quy trình', values: ['Thấp', 'Thấp đến trung bình', 'Rất cao', 'Thấp, dùng mẫu sẵn'] },
-  { label: 'Tốc độ triển khai', values: ['Nhanh nhất', 'Nhanh', 'Theo dự án', 'Nhanh nhất'] },
+  { label: 'Tốc độ triển khai', values: ['Nhanh', 'Nhanh', 'Theo dự án', 'Nhanh'] },
   { label: 'Chi phí tương đối', values: ['$', '$$', '$$$$', '$'] },
   { label: 'Khách mục tiêu', values: ['SME, HTX, OCOP', 'Thương hiệu, đặc sản', 'Doanh nghiệp lớn, xuất khẩu', 'Nhà nhập khẩu'] },
 ]

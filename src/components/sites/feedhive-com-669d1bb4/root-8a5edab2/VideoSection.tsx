@@ -47,7 +47,7 @@ export function VideoSection() {
               <br className="hidden lg:block" /> tuân thủ nội địa.
             </>
           }
-          desc="Mỗi hành trình được “đóng dấu” xác thực và đồng bộ lên Cổng truy xuất nguồn gốc quốc gia và Hệ thống Nhãn điện tử Quốc gia."
+          desc={"Mỗi sự kiện được ký và đồng bộ lên Cổng truy xuất nguồn gốc quốc gia và Hệ thống Nhãn điện tử Quốc gia."}
         />
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {standards.map((s) => (

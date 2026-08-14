@@ -22,29 +22,29 @@ const bigCards: BigCard[] = [
     eyebrow: 'TRUY XUẤT',
     title: 'Truy xuất nguồn gốc',
     desc: 'Thiết kế Luồng gồm nhiều Sự kiện theo 5 yếu tố GS1 EPCIS: Ai · Ở đâu · Khi nào · Thông tin · Hình ảnh.',
-    image: `${IMG}/feature-image-4.webp`,
-    alt: 'Thiết kế luồng truy xuất',
+    image: `${IMG}/feature-traceability-v3.png`,
+    alt: 'Luồng sự kiện truy xuất nguồn gốc theo 5 yếu tố GS1 EPCIS',
   },
   {
     eyebrow: 'NHÃN ĐIỆN TỬ',
     title: 'Nhãn điện tử',
     desc: 'Soạn nhãn theo NĐ 37/2026, chọn nhóm hàng hoá để bung đúng trường bắt buộc. Quản lý lô, nháp → phát hành → thu hồi.',
-    image: `${IMG}/feature-image-5.webp`,
-    alt: 'Soạn nhãn điện tử',
+    image: `${IMG}/feature-elabel-v2.png`,
+    alt: 'Soạn nhãn điện tử theo NĐ 37/2026, quản lý lô nháp phát hành thu hồi',
   },
   {
     eyebrow: 'QR CÔNG KHAI',
     title: 'QR công khai xác thực',
     desc: 'Một QR cho mỗi sản phẩm/lô → trang cho người tiêu dùng, có dấu xác thực, đồng bộ hệ thống quốc gia. Không đăng nhập.',
-    image: `${IMG}/showcase-image-1.webp`,
-    alt: 'Trang QR công khai',
+    image: `${IMG}/feature-qr-public-v2.png`,
+    alt: 'QR công khai xác thực — trang người tiêu dùng đồng bộ cổng quốc gia',
   },
   {
     eyebrow: 'HÀNH TRÌNH',
     title: 'Bản đồ hành trình',
     desc: 'Ba chế độ: bản đồ thực (OpenStreetMap), sơ đồ doanh nghiệp và dòng thời gian, có playback chạy tuần tự các điểm.',
-    image: `${IMG}/showcase-image-2.webp`,
-    alt: 'Bản đồ hành trình',
+    image: `${IMG}/feature-journey-v2.png`,
+    alt: 'Bản đồ hành trình ba chế độ: bản đồ thực, sơ đồ doanh nghiệp, dòng thời gian',
   },
 ]
 
@@ -123,14 +123,13 @@ export function AgenticWorkflows() {
                   {card.desc}
                 </p>
               </div>
-              <div className="mt-auto flex justify-center pt-[24px]">
-                <div className="relative w-full">
+              <div className="mt-auto pt-[24px]">
+                <div className="relative h-[220px] w-full overflow-hidden rounded-t-[8px] sm:h-[240px]">
                   <Image
                     src={card.image}
                     alt={card.alt}
-                    width={800}
-                    height={500}
-                    className="block h-auto w-full"
+                    fill
+                    className="object-cover object-top"
                   />
                 </div>
               </div>

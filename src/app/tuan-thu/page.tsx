@@ -30,14 +30,16 @@ export default function TuanThuPage() {
             </>
           }
           desc="Mỗi sản phẩm mang dấu xác thực và được đồng bộ lên Cổng truy xuất nguồn gốc quốc gia. Phần tuân thủ pháp lý, để Vlabel lo."
+          image="/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-image-2-v3.png"
+          imageAlt="Bản đồ hành trình sản phẩm đã xác thực"
         />
         <VideoSection />
         <ComplianceHandled />
         <LegalFramework />
         <PageCTA
           eyebrow="BẮT ĐẦU"
-          title="Đưa sản phẩm của bạn đúng luật."
-          desc="Để lại nhóm hàng hoá, Vlabel khảo sát yêu cầu pháp lý và triển khai đúng chuẩn."
+          title="Kiểm tra sản phẩm của bạn cần tuân thủ gì."
+          desc="Gửi nhóm hàng hoá, Vlabel kiểm tra yêu cầu pháp lý và đề xuất cách triển khai."
           buttonLabel="Nhận tư vấn"
         />
       </main>

@@ -12,27 +12,27 @@ interface Item {
 const items: Item[] = [
   {
     number: '01',
-    pain: '“Hàng này thật không? Nguồn gốc ở đâu? Đã qua công đoạn nào?”',
+    pain: 'Người tiêu dùng không xác thực được hàng thật — và doanh nghiệp không chứng minh được.',
     solution:
       'Quét một mã QR ra hành trình đã xác thực — không cần app hay đăng nhập.',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/cycle-image-1.webp',
-    alt: 'Người tiêu dùng quét QR',
+    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/cycle-image-1.png',
+    alt: 'Người tiêu dùng quét QR xác thực hàng thật',
   },
   {
     number: '02',
     pain: 'Tuân thủ ghi nhãn (NĐ 43/2017) và nhãn điện tử (NĐ 37/2026) mà không có công cụ số hoá.',
     solution:
       'Chọn nhóm hàng hoá, hệ thống bung đúng các trường bắt buộc.',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/cycle-image-2.webp',
-    alt: 'Soạn nhãn điện tử theo quy định',
+    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/cycle-image-2.png',
+    alt: 'Chọn nhóm hàng hoá, hệ thống bung đúng trường bắt buộc theo NĐ 37/2026',
   },
   {
     number: '03',
     pain: 'Một tỉnh cần quản lý truy xuất cho nhiều doanh nghiệp, hợp tác xã cùng lúc.',
     solution:
       'Đa khách hàng: một nền tảng, nhiều doanh nghiệp, cây đơn vị đa tầng.',
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/cycle-image-3.webp',
-    alt: 'Quản lý đa khách hàng cho địa phương',
+    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/cycle-image-3b.png',
+    alt: 'Vlabel kết nối một nền tảng với nhiều doanh nghiệp và hợp tác xã',
   },
 ]
 
@@ -46,7 +46,7 @@ export function HowItWorks() {
         <SectionHeading
           className="mb-10 lg:mb-14"
           eyebrow="01 · BÀI TOÁN → GIẢI PHÁP"
-          title="Ba nỗi đau. Ba lời giải."
+          title="Ba vấn đề. Vlabel giải từng cái."
           desc="Người tiêu dùng không phân biệt thật, giả. Doanh nghiệp phải tuân thủ ghi nhãn nhưng thiếu công cụ số hoá. Địa phương cần một hệ thống thống nhất cho nhiều doanh nghiệp."
         />
         <div className="grid grid-cols-1 divide-y divide-black/5 lg:grid-cols-3 lg:divide-x lg:divide-y-0">

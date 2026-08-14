@@ -22,8 +22,8 @@ const panels: Panel[] = [
       'Bảng tổng quan, nhật ký kiểm toán, duyệt & khoá',
       'Sinh QR & nhập QR hàng loạt',
     ],
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-image-1.webp',
-    alt: 'Bảng điều khiển web',
+    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-web-dashboard-v2.png',
+    alt: 'Bảng điều khiển web Vlabel — quản trị tập trung, nhật ký kiểm toán, sinh QR hàng loạt',
     imageLeft: true,
   },
   {
@@ -36,8 +36,8 @@ const panels: Panel[] = [
       'Luồng quản lý: trợ lý, bản đồ hành trình',
       'Thông báo đẩy nhắc việc',
     ],
-    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/hero-social-inbox.webp',
-    alt: 'Ứng dụng di động kê khai thực địa',
+    image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-mobile-app-v2.png',
+    alt: 'Ứng dụng di động Vlabel — kê khai thực địa, ghi sự kiện kèm GPS, bản đồ hành trình',
     imageLeft: false,
   },
 ]
@@ -55,7 +55,7 @@ export function FeatureShowcase() {
               <br className="hidden lg:block" /> thực địa trên điện thoại.
             </>
           }
-          desc="Hợp thực địa nơi mạng yếu: nhà máy, vùng trồng, kho."
+          desc="Hỗ trợ thực địa nơi mạng yếu: nhà máy, vùng trồng, kho."
         />
         <div className="divide-y divide-black/5">
           {panels.map((panel) => (
@@ -98,11 +98,6 @@ export function FeatureShowcase() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center pb-4">
-          <span className="rounded-full border border-black/[0.08] bg-[#f7f7f9] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-[#4f5562]">
-            Kê khai offline · Tự đồng bộ
-          </span>
         </div>
       </div>
     </section>

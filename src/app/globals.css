@@ -120,6 +120,18 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* Marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+  will-change: transform;
+}
+
 /* FeedHive custom CSS */
 .fh-primary { color: #4457FF; }
 .fh-bg-primary { background-color: #4457FF; }

@@ -32,7 +32,7 @@ export function SectionHeading({
       </p>
       <h2
         className={cn(
-          'text-[34px] font-medium uppercase leading-[1.12] tracking-[-0.03em] lg:text-[46px]',
+          'text-[34px] font-medium leading-[1.12] tracking-[-0.03em] lg:text-[46px]',
           isLight ? 'text-white' : 'text-[#20232b]'
         )}
         style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}

@@ -48,7 +48,7 @@ export function DataIntegrity() {
                   <div className="flex h-11 w-11 items-center justify-center rounded-[12px] bg-[#eef0ff]">
                     <Icon className="h-5 w-5 text-[#4457ff]" strokeWidth={1.8} />
                   </div>
-                  <span className="font-mono text-[13px] font-semibold text-[#c7d0ff]">{s.index}</span>
+                  <span className="tabular-nums text-[13px] font-semibold text-[#c7d0ff]">{s.index}</span>
                 </div>
                 <h3 className="mt-4 text-[19px] font-medium text-[#20232b]" style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}>
                   {s.title}

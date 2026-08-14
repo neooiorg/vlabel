@@ -53,7 +53,7 @@ export function SocialProof() {
             03 · Cách hoạt động · Quy trình
           </p>
           <h2
-            className="mx-auto max-w-[760px] text-[32px] font-medium leading-[1.0] tracking-[-0.03em] text-[#23252b] sm:text-[44px] lg:text-[56px]"
+            className="mx-auto max-w-[760px] text-[26px] font-medium leading-[1.1] tracking-[-0.03em] text-[#23252b] sm:text-[32px] lg:text-[38px]"
             style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
           >
             Năm bước, từ nhà máy đến người tiêu dùng.
@@ -73,9 +73,6 @@ export function SocialProof() {
                   key={step.number}
                   className="flex flex-col items-center bg-white px-6 pb-8 pt-7 text-center"
                 >
-                  <p className="mb-3 font-mono text-[13px] font-semibold text-[#4457ff]">
-                    {step.number}.
-                  </p>
                   <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-[13px] bg-[#eef0ff]">
                     <Icon className="h-[18px] w-[18px] text-[#4457ff]" strokeWidth={1.8} />
                   </div>

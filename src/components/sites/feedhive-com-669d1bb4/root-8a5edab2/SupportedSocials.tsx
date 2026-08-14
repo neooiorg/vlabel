@@ -5,6 +5,7 @@ interface Role {
   name: string
   responsibility: string
   scope: string
+  avatarImg: number
 }
 
 const roles: Role[] = [
@@ -13,24 +14,28 @@ const roles: Role[] = [
     name: 'Kê khai',
     responsibility: 'Nhập dữ liệu cho các Sự kiện được phân quyền.',
     scope: 'Sự kiện được giao',
+    avatarImg: 5,
   },
   {
     code: 'QL',
     name: 'Quản lý',
     responsibility: 'Cấu hình Luồng/Sự kiện, người dùng và phân quyền trong tổ chức.',
     scope: 'Trong tổ chức',
+    avatarImg: 12,
   },
   {
     code: 'AD',
     name: 'Admin',
     responsibility: 'Toàn quyền; cấu hình tổ chức từ cấp 2 trở xuống.',
     scope: 'Cấp 2 trở xuống',
+    avatarImg: 47,
   },
   {
     code: 'SA',
     name: 'Superadmin',
     responsibility: 'Toàn quyền; cấu hình cả tổ chức cấp 1.',
     scope: 'Toàn khách hàng',
+    avatarImg: 33,
   },
 ]
 
@@ -64,12 +69,22 @@ export function SupportedSocials() {
                 className="grid grid-cols-1 gap-3 px-6 py-5 lg:grid-cols-[1.2fr_2fr_1.2fr] lg:items-center lg:gap-4"
               >
                 <div className="flex items-center gap-3">
-                  <span
-                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[10px] bg-[#eef0ff] text-[14px] font-bold text-[#4457ff]"
-                    style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
-                  >
-                    {role.code}
-                  </span>
+                  <div className="relative shrink-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`https://i.pravatar.cc/80?img=${role.avatarImg}`}
+                      alt={role.name}
+                      width={40}
+                      height={40}
+                      className="h-10 w-10 rounded-full object-cover ring-2 ring-white shadow-sm"
+                    />
+                    <span
+                      className="absolute -bottom-1 -right-1 flex h-[18px] min-w-[18px] items-center justify-center rounded-full bg-[#4457ff] px-[3px] text-[9px] font-bold leading-none text-white"
+                      style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
+                    >
+                      {role.code}
+                    </span>
+                  </div>
                   <span
                     className="text-[16px] font-bold text-[#20232b]"
                     style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}

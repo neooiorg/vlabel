@@ -1,7 +1,6 @@
 import { AnnouncementBar } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/AnnouncementBar";
 import { Navigation } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/Navigation";
 import { HeroSection } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/HeroSection";
-import { TrustedByBrands } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/TrustedByBrands";
 import { HowItWorks } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/HowItWorks";
 import { AgenticWorkflows } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/AgenticWorkflows";
 import { SocialProof } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/SocialProof";
@@ -20,7 +19,6 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
-        <TrustedByBrands />
         <HowItWorks />
         <AgenticWorkflows />
         <SocialProof />

@@ -30,24 +30,22 @@ export function SolutionProcess() {
           }
           desc="Vlabel lo phần chuẩn hoá và đồng bộ, đội bạn chỉ khai báo dữ liệu."
         />
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((step) => (
             <div
               key={step.number}
-              className="flex gap-4 rounded-[18px] border border-black/5 bg-white p-6 shadow-sm"
+              className="rounded-[18px] border border-black/[0.06] bg-white px-6 py-5"
             >
-              <span
-                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#4457ff] text-[16px] font-bold text-white"
+              <p className="mb-3 tabular-nums text-[22px] font-bold leading-none text-[#4457ff]">
+                {step.number}
+              </p>
+              <h3
+                className="text-[16px] font-semibold leading-[1.3] text-[#20232b]"
                 style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
               >
-                {step.number}
-              </span>
-              <div>
-                <h3 className="text-[17px] font-medium text-[#20232b]" style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}>
-                  {step.title}
-                </h3>
-                <p className="mt-1 text-[14px] leading-[1.5] text-[#4f5562]">{step.desc}</p>
-              </div>
+                {step.title}
+              </h3>
+              <p className="mt-1.5 text-[13px] leading-[1.55] text-[#4f5562]">{step.desc}</p>
             </div>
           ))}
         </div>
