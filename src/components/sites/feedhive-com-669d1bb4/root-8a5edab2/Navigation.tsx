@@ -86,7 +86,7 @@ export function Navigation() {
       </header>
 
       {/* Mobile drawer overlay */}
-      <div className={cn("fixed inset-0 z-50 lg:hidden", open ? "pointer-events-auto" : "pointer-events-none")}>
+      <div className={cn("fixed inset-0 z-50 overflow-hidden lg:hidden", open ? "pointer-events-auto" : "pointer-events-none")}>
           {/* Backdrop */}
           <div
             className={cn("absolute inset-0 bg-black/30 backdrop-blur-[2px] transition-opacity duration-300", open ? "opacity-100" : "opacity-0")}

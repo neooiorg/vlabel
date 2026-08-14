@@ -75,14 +75,14 @@ export function HeroSection() {
             </ul>
 
             {/* CTA */}
-            <div className="mt-8 flex items-center gap-5">
+            <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5">
               <a
                 href="#tu-van"
-                className="inline-flex h-[50px] items-center justify-center rounded-[15px] bg-[#4457ff] px-8 text-[15px] font-medium tracking-[-0.03em] text-white transition-colors duration-200 hover:bg-[#3a4ce0]"
+                className="inline-flex h-[50px] w-full items-center justify-center rounded-[15px] bg-[#4457ff] px-8 text-[15px] font-medium tracking-[-0.03em] text-white transition-colors duration-200 hover:bg-[#3a4ce0] sm:w-auto"
               >
                 Dùng thử / Đăng ký
               </a>
-              <div className="space-y-0.5 text-[13px] leading-5 tracking-[-0.015em] text-[#767b84]">
+              <div className="text-[13px] leading-5 tracking-[-0.015em] text-[#767b84]">
                 <p>Báo giá trong 24 giờ, không cần cam kết.</p>
               </div>
             </div>

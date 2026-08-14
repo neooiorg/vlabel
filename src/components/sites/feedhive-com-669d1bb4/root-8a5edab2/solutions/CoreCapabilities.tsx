@@ -45,10 +45,17 @@ export function CoreCapabilities() {
   return (
     <section className="bg-white px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-[1188px] pt-10 lg:pt-16">
-        <div className="mb-4 text-center">
-          <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#4457ff]">
+        <div className="mb-10 text-center lg:mb-14">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.1em] text-[#4457ff]">
             01 · HAI NĂNG LỰC CỐT LÕI
           </p>
+          <h2
+            className="text-[34px] font-medium leading-[1.12] tracking-[-0.03em] text-[#20232b] lg:text-[46px]"
+            style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
+          >
+            Nhãn điện tử và truy xuất.
+            <br className="hidden lg:block" /> Hai năng lực, một nền tảng.
+          </h2>
         </div>
         <div className="divide-y divide-black/5">
           {panels.map((panel) => (
