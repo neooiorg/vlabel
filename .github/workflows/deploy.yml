@@ -52,7 +52,7 @@ jobs:
         if: success()
         run: |
           curl -s -X POST "https://dokploy.neooi.com/api/application.redeploy" \
-            -H "Authorization: Bearer ${{ secrets.DOKPLOY_API_TOKEN }}" \
+            -H "x-api-key: ${{ secrets.DOKPLOY_API_TOKEN }}" \
             -H "Content-Type: application/json" \
             -d '{"applicationId": "trWfe8q7n9pXjB52EcZzv"}' \
             --fail-with-body
