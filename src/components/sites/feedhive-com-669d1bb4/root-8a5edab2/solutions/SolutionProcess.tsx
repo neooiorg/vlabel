@@ -7,12 +7,12 @@ interface Step {
 }
 
 const steps: Step[] = [
-  { number: '01', title: 'Khảo sát nhu cầu', desc: 'Hiểu sản phẩm, kênh bán và yêu cầu pháp lý.' },
-  { number: '02', title: 'Chuẩn hóa dữ liệu', desc: 'Dựng bộ dữ liệu đúng chuẩn để kết nối được.' },
-  { number: '03', title: 'Triển khai', desc: 'Cấp mã, tạo QR và trang hiển thị khi quét.' },
-  { number: '04', title: 'Đồng bộ', desc: 'Kết nối dữ liệu lên hệ thống quốc gia.' },
-  { number: '05', title: 'Đào tạo', desc: 'Chuyển giao để đội bạn tự vận hành.' },
-  { number: '06', title: 'Hỗ trợ dài hạn', desc: 'Bảo trì, theo dõi quy định mới và nâng cấp.' },
+  { number: '01', title: 'Khảo sát nhu cầu', desc: 'Xác định sản phẩm, mô hình vận hành và yêu cầu pháp lý.' },
+  { number: '02', title: 'Chuẩn hóa dữ liệu', desc: 'Chuẩn hóa thông tin để sẵn sàng kết nối và truy xuất.' },
+  { number: '03', title: 'Triển khai hệ thống', desc: 'Tạo mã QR, cấu hình nhãn và trang hiển thị sản phẩm.' },
+  { number: '04', title: 'Kết nối dữ liệu', desc: 'Đồng bộ dữ liệu với các hệ thống quốc gia.' },
+  { number: '05', title: 'Đào tạo vận hành', desc: 'Hướng dẫn đội ngũ sử dụng và quản lý hệ thống.' },
+  { number: '06', title: 'Hỗ trợ lâu dài', desc: 'Bảo trì, cập nhật quy định và nâng cấp khi cần.' },
 ]
 
 export function SolutionProcess() {
@@ -22,13 +22,8 @@ export function SolutionProcess() {
         <SectionHeading
           className="mb-10 lg:mb-14"
           eyebrow="04 · QUY TRÌNH · SÁU BƯỚC"
-          title={
-            <>
-              Sáu bước,
-              <br className="hidden lg:block" /> Vlabel làm phần khó.
-            </>
-          }
-          desc="Vlabel lo phần chuẩn hoá và đồng bộ, đội bạn chỉ khai báo dữ liệu."
+          title="Sáu bước triển khai, Vlabel đồng hành xuyên suốt."
+          desc="Vlabel phụ trách phần kỹ thuật, chuẩn hóa và kết nối; doanh nghiệp tập trung cung cấp và cập nhật dữ liệu."
         />
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((step) => (

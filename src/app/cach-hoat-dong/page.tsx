@@ -6,6 +6,7 @@ import { PageHero } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2
 import { PageCTA } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/pages/PageCTA";
 import { SocialProof } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/SocialProof";
 import { EpcisElements } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/pages/EpcisElements";
+import { GS1Elements } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/pages/GS1Elements";
 import { DataIntegrity } from "@/components/sites/feedhive-com-669d1bb4/root-8a5edab2/pages/DataIntegrity";
 
 export const metadata: Metadata = {
@@ -24,22 +25,23 @@ export default function CachHoatDongPage() {
           eyebrow="CÁCH HOẠT ĐỘNG"
           title={
             <>
-              Quy trình
+              Quy trình rõ ràng,
               <br />
-              <span className="text-[#4457ff]">từng bước.</span>
+              <span className="text-[#4457ff]">theo từng bước.</span>
             </>
           }
-          desc="Mỗi sản phẩm đi qua các công đoạn, mỗi công đoạn là một sự kiện đã ký. Vlabel chuẩn hoá và đồng bộ, đội bạn chỉ khai báo dữ liệu."
+          desc="Mỗi công đoạn được ghi nhận thành một sự kiện trong hành trình sản phẩm. Vlabel hỗ trợ chuẩn hóa, xác thực và đồng bộ dữ liệu, doanh nghiệp chỉ cần cập nhật thông tin cần thiết."
           image="/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-image-1-v2.png"
           imageAlt="Trang QR công khai xác thực hành trình sản phẩm"
         />
         <SocialProof />
         <EpcisElements />
+        <GS1Elements />
         <DataIntegrity />
         <PageCTA
           eyebrow="BẮT ĐẦU"
-          title="Gửi thông tin sản phẩm, Vlabel đề xuất quy trình cụ thể."
-          desc="Vlabel liên hệ khảo sát và đề xuất quy trình trong ngày."
+          title="Gửi thông tin sản phẩm, nhận quy trình phù hợp."
+          desc="Vlabel sẽ khảo sát nhu cầu và đề xuất quy trình triển khai cụ thể cho sản phẩm của bạn."
           buttonLabel="Nhận tư vấn"
         />
       </main>

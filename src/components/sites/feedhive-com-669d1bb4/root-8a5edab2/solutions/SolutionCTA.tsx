@@ -27,8 +27,8 @@ export function SolutionCTA() {
             <SectionHeading
               tone="light"
               eyebrow="07 · BẮT ĐẦU"
-              title="Gửi thông tin sản phẩm, Vlabel báo giá trong 24 giờ."
-              desc="Vlabel khảo sát và báo giá cụ thể — không cần cam kết."
+              title="Gửi thông tin sản phẩm, nhận tư vấn phù hợp."
+              desc="Vlabel sẽ khảo sát nhu cầu, đề xuất giải pháp và báo giá cụ thể theo từng mô hình triển khai."
             />
             <a
               href="/#tu-van"

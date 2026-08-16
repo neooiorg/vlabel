@@ -4,16 +4,16 @@ const IMG = '/sites/feedhive-com-669d1bb4/root-8a5edab2/images'
 
 const bulletItems = [
   {
-    bold: 'Truy xuất.',
-    rest: ' Quét một mã QR, người tiêu dùng thấy hành trình đã ký — không cần app.',
+    bold: 'Truy xuất nguồn gốc.',
+    rest: ' Quét một mã QR để xem đầy đủ hành trình sản phẩm đã được xác thực, không cần cài ứng dụng.',
   },
   {
     bold: 'Nhãn điện tử.',
-    rest: ' Soạn nhãn theo NĐ 37/2026, hệ thống bung đúng trường bắt buộc.',
+    rest: ' Tạo nhãn theo NĐ 37/2026, hệ thống tự động hiển thị đầy đủ các trường thông tin bắt buộc.',
   },
   {
-    bold: 'Đa khách hàng.',
-    rest: ' Một nền tảng cho nhiều doanh nghiệp, hợp tác xã và địa phương.',
+    bold: 'Đa đơn vị.',
+    rest: ' Một nền tảng dùng chung cho nhiều doanh nghiệp, hợp tác xã và địa phương.',
   },
 ]
 
@@ -27,7 +27,7 @@ const marqueeItems = [
   'Quản lý lô',
   'Bảng tổng quan',
   'Thư viện nhãn',
-  'Kê khai thực địa',
+  'Cập nhật tại chỗ',
   'API / Tích hợp',
   'Nhật ký kiểm toán',
 ]
@@ -52,13 +52,13 @@ export function HeroSection() {
 
             {/* H1 */}
             <h1 className="text-[44px] font-medium leading-[1.06] tracking-[-0.035em] text-[#23252b] lg:text-[55px]">
-              Một mã QR.
+              Một mã QR,
               <br />
-              <span className="text-[#4457ff]">Trọn nguồn gốc.</span>
+              <span className="text-[#4457ff]">đầy đủ thông tin truy xuất.</span>
             </h1>
 
             <p className="mt-6 max-w-[520px] text-[16px] leading-[1.6] text-[#4f5562]">
-              Nhãn điện tử và truy xuất nguồn gốc cho doanh nghiệp và địa phương. Quét mã QR, người tiêu dùng thấy hành trình đã ký.
+              Giải pháp nhãn điện tử và truy xuất nguồn gốc dành cho doanh nghiệp và địa phương. Chỉ cần quét mã QR, người tiêu dùng có thể xem toàn bộ hành trình của sản phẩm một cách minh bạch và xác thực.
             </p>
 
             {/* Bullet checklist */}
@@ -66,10 +66,7 @@ export function HeroSection() {
               {bulletItems.map((item) => (
                 <li key={item.bold} className="flex items-start gap-3 text-[15px] text-[#20232b]">
                   <span className="mt-0.5 flex-shrink-0 text-[#4457ff]">✓</span>
-                  <span>
-                    <strong className="font-semibold">{item.bold}</strong>
-                    {item.rest}
-                  </span>
+                  <strong className="font-semibold">{item.bold}</strong>
                 </li>
               ))}
             </ul>

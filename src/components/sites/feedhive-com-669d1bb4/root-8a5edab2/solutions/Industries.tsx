@@ -10,33 +10,33 @@ interface Industry {
 const industries: Industry[] = [
   {
     icon: Leaf,
-    title: 'Nông sản và OCOP',
-    desc: 'Truy xuất là điều kiện gần như bắt buộc để nâng hạng sao và vào siêu thị.',
+    title: 'Nông sản & OCOP',
+    desc: 'Minh bạch nguồn gốc, chuẩn hóa thông tin và hỗ trợ nâng cao giá trị sản phẩm.',
   },
   {
     icon: Ship,
     title: 'Hàng xuất khẩu',
-    desc: 'Lệnh 248/249 và yêu cầu của EU: thiếu hồ sơ truy xuất là mất đơn.',
+    desc: 'Chuẩn hóa hồ sơ truy xuất, đáp ứng yêu cầu của thị trường và đối tác quốc tế.',
   },
   {
     icon: HeartPulse,
-    title: 'Dược và thực phẩm chức năng',
-    desc: 'Ba trong một trên cùng mã QR: xác thực chính hãng, truy xuất lô, thông tin thương hiệu.',
+    title: 'Dược & thực phẩm chức năng',
+    desc: 'Một mã QR cho xác thực sản phẩm, truy xuất lô và cung cấp thông tin đến người tiêu dùng.',
   },
   {
     icon: Sparkles,
-    title: 'Mỹ phẩm và FMCG',
-    desc: 'Tem quét ra trang xấu làm giảm giá trị sản phẩm. Vlabel làm trang đẹp theo bộ nhận diện thương hiệu.',
+    title: 'Mỹ phẩm & FMCG',
+    desc: 'Trang quét QR được thiết kế theo nhận diện thương hiệu, giúp nâng cao trải nghiệm và hình ảnh sản phẩm.',
   },
   {
     icon: Utensils,
-    title: 'Thực phẩm và đồ uống',
-    desc: 'Minh bạch nguồn gốc, hạn dùng và an toàn thực phẩm cho người mua.',
+    title: 'Thực phẩm & đồ uống',
+    desc: 'Cung cấp rõ nguồn gốc, thông tin sản phẩm, hạn sử dụng và các dữ liệu cần thiết cho người mua.',
   },
   {
     icon: Factory,
     title: 'Sản xuất công nghiệp',
-    desc: 'Hộ chiếu số sản phẩm, phân quyền theo công đoạn và tích hợp ERP hoặc MES.',
+    desc: 'Quản lý dữ liệu sản phẩm theo từng công đoạn, phân quyền vận hành và hỗ trợ tích hợp ERP, MES.',
   },
 ]
 
@@ -47,13 +47,8 @@ export function Industries() {
         <SectionHeading
           className="mb-10 lg:mb-14"
           eyebrow="06 · LĨNH VỰC"
-          title={
-            <>
-              Mỗi ngành một
-              <br className="hidden lg:block" /> lý do riêng.
-            </>
-          }
-          desc="Từ nâng hạng sao đến xuất khẩu hay hình ảnh thương hiệu, truy xuất và nhãn điện tử có giá trị riêng ở mỗi ngành."
+          title="Mỗi lĩnh vực, một nhu cầu riêng."
+          desc="Từ OCOP, xuất khẩu đến xây dựng thương hiệu, truy xuất nguồn gốc và nhãn điện tử mang lại giá trị khác nhau cho từng ngành."
         />
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map((ind) => {

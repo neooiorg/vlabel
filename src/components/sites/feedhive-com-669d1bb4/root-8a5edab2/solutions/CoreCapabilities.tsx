@@ -15,12 +15,12 @@ interface Panel {
 const panels: Panel[] = [
   {
     label: 'NHÃN ĐIỆN TỬ',
-    title: 'Nhãn chỉnh được mà không in lại bao bì.',
-    desc: 'Nội dung nhãn nằm trên mã QR, cập nhật ngay khi cần mà không phải in lại bao bì.',
+    title: 'Cập nhật nhãn mà không cần in lại bao bì.',
+    desc: 'Thông tin được hiển thị qua mã QR, có thể cập nhật khi cần mà không phải in lại.',
     bullets: [
-      'Cập nhật tức thì, lưu vết phiên bản',
-      'Đa ngôn ngữ cho hàng xuất khẩu',
-      'Giảm chữ phải in trên bao bì',
+      'Cập nhật nhanh, lưu lịch sử phiên bản',
+      'Hỗ trợ đa ngôn ngữ',
+      'Giảm lượng thông tin phải in trên bao bì',
     ],
     image: `${IMG}/showcase-image-2-v2.png`,
     alt: 'Soạn và cập nhật nhãn điện tử',
@@ -28,12 +28,12 @@ const panels: Panel[] = [
   },
   {
     label: 'TRUY XUẤT NGUỒN GỐC',
-    title: 'Cả hành trình sau một lần quét.',
-    desc: 'Ghi lại lý lịch sản phẩm qua từng công đoạn. Sẵn sàng cho hậu kiểm và xuất khẩu.',
+    title: 'Toàn bộ hành trình sau một lần quét.',
+    desc: 'Ghi nhận hành trình sản phẩm qua từng công đoạn, phục vụ kiểm tra, đối soát và xuất khẩu.',
     bullets: [
-      'Một bước trước, một bước sau theo TCVN 12850',
-      'Đồng bộ dữ liệu lên cổng quốc gia',
-      'Hồ sơ sẵn cho Lệnh 248/249 và EU',
+      'Truy xuất trước – sau theo TCVN 12850',
+      'Đồng bộ dữ liệu với cổng quốc gia',
+      'Hỗ trợ hồ sơ phục vụ xuất khẩu',
     ],
     image: `${IMG}/showcase-image-1-v2.png`,
     alt: 'Bản đồ hành trình truy xuất',
@@ -53,8 +53,7 @@ export function CoreCapabilities() {
             className="text-[34px] font-medium leading-[1.12] tracking-[-0.03em] text-[#20232b] lg:text-[46px]"
             style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
           >
-            Nhãn điện tử và truy xuất.
-            <br className="hidden lg:block" /> Hai năng lực, một nền tảng.
+            Nhãn điện tử và truy xuất nguồn gốc trên một nền tảng.
           </h2>
         </div>
         <div className="divide-y divide-black/5">

@@ -48,7 +48,7 @@ export function HowItWorks() {
           <SectionHeading
             className="mb-10 lg:mb-14"
             eyebrow="01 · BÀI TOÁN → GIẢI PHÁP"
-            title="Ba vấn đề. Vlabel giải từng cái."
+            title={<>Vlabel giải<br className="hidden lg:block" /> 3 bài toán thực tế.</>}
             desc="Người tiêu dùng không phân biệt thật, giả. Doanh nghiệp phải tuân thủ ghi nhãn nhưng thiếu công cụ số hoá. Địa phương cần một hệ thống thống nhất cho nhiều doanh nghiệp."
           />
         </AnimateIn>
@@ -70,7 +70,6 @@ export function HowItWorks() {
                   />
                 </div>
                 <div className="text-center">
-                  <p className="text-[13px] font-semibold text-[#9fa3af]">{item.number}</p>
                   <h3
                     className="mt-2 text-[17px] font-bold leading-[1.35] text-[#20232b]"
                     style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}

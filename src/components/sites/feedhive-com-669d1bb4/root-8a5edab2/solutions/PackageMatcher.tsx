@@ -3,28 +3,28 @@ import { SectionHeading } from '../SectionHeading'
 const options = [
   {
     num: '01',
-    desc: 'HTX, SME, OCOP — ngân sách gọn, cần đúng luật từ ngày đầu',
+    desc: 'Dành cho HTX, SME, OCOP cần triển khai nhanh, chi phí hợp lý và đáp ứng quy định.',
     pkg: 'VLabel Standard',
   },
   {
     num: '02',
-    desc: 'Có thương hiệu, coi trọng hình ảnh, muốn trang quét đẹp',
+    desc: 'Dành cho thương hiệu chú trọng hình ảnh và muốn trang quét QR đẹp, đồng bộ nhận diện.',
     pkg: 'VLabel Brand',
   },
   {
     num: '03',
-    desc: 'Doanh nghiệp lớn hoặc xuất khẩu, muốn hệ thống riêng và tích hợp ERP',
+    desc: 'Dành cho doanh nghiệp lớn hoặc xuất khẩu, cần hệ thống riêng và tích hợp ERP.',
     pkg: 'VLabel Enterprise',
   },
   {
     num: '04',
-    desc: 'Nhập khẩu và phân phối, cần nhãn phụ tiếng Việt đúng mẫu',
+    desc: 'Dành cho doanh nghiệp nhập khẩu, phân phối cần nhãn phụ tiếng Việt đúng quy định.',
     pkg: 'VLabel SubLabel',
   },
   {
     num: '05',
-    desc: 'Mua về mà đội chưa rành — cần đào tạo và chuyển giao',
-    pkg: 'Gói đào tạo & chuyển giao',
+    desc: 'Dành cho đội ngũ cần hướng dẫn vận hành, đào tạo và chuyển giao hệ thống.',
+    pkg: 'Đào tạo & chuyển giao',
   },
 ]
 
@@ -35,13 +35,8 @@ export function PackageMatcher() {
         <SectionHeading
           className="mb-10 lg:mb-14"
           eyebrow="03 · CHỌN GÓI"
-          title={
-            <>
-              Chọn mô tả
-              <br className="hidden lg:block" /> gần nhất.
-            </>
-          }
-          desc="Nhận ra mình trong mô tả nào, điền form bên dưới — Vlabel tư vấn gói và quy trình cụ thể."
+          title="Chọn giải pháp phù hợp với nhu cầu."
+          desc="Chọn mô tả gần nhất với doanh nghiệp của bạn, Vlabel sẽ tư vấn gói triển khai và quy trình phù hợp."
         />
 
         <div className="mx-auto max-w-[780px] overflow-hidden rounded-[18px] border border-black/5">

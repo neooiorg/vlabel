@@ -6,17 +6,17 @@ const points = [
   {
     number: '01',
     title: 'Thông tin sản phẩm & nhãn điện tử',
-    desc: 'Nội dung nhãn đầy đủ theo quy định, luôn cập nhật, không phải in lại.',
+    desc: 'Hiển thị đầy đủ thông tin theo quy định, dễ dàng cập nhật mà không cần in lại.',
   },
   {
     number: '02',
-    title: 'Hành trình truy xuất đã xác thực',
-    desc: 'Từ nhà máy tới điểm bán, theo từng mốc, kèm GPS.',
+    title: 'Hành trình truy xuất xác thực',
+    desc: 'Theo dõi hành trình sản phẩm qua từng mốc, từ nơi sản xuất đến điểm bán.',
   },
   {
     number: '03',
-    title: 'Dấu xác thực & song ngữ',
-    desc: 'Dấu xác thực kèm nút chuyển ngôn ngữ cho khách quốc tế.',
+    title: 'Xác thực & song ngữ',
+    desc: 'Hiển thị thông tin xác thực và hỗ trợ chuyển đổi Việt / Anh cho người dùng quốc tế.',
   },
 ]
 
@@ -33,13 +33,8 @@ export function FeaturesGrid() {
           <SectionHeading
             className="mb-10 lg:mb-14"
             eyebrow="07 · TRẢI NGHIỆM NGƯỜI TIÊU DÙNG"
-            title={
-              <>
-                Một lần quét,
-                <br className="hidden lg:block" /> trọn câu chuyện.
-              </>
-            }
-            desc="Quét QR ra trang song ngữ Việt/Anh: thông tin sản phẩm, nhãn điện tử, hành trình truy xuất và doanh nghiệp chịu trách nhiệm — không cần app, không cần đăng nhập."
+            title="Một lần quét, đầy đủ thông tin."
+            desc="Quét QR để xem thông tin sản phẩm, nhãn điện tử và hành trình truy xuất bằng tiếng Việt hoặc tiếng Anh."
           />
         </AnimateIn>
 

@@ -12,26 +12,26 @@ const standards: Standard[] = [
   {
     index: '01',
     code: 'GS1 EPCIS',
-    title: 'Dữ liệu sự kiện quốc tế',
-    desc: 'Ai · Ở đâu · Khi nào · Thông tin · Hình ảnh. Chuẩn toàn cầu cho sự kiện chuỗi cung ứng.',
+    title: 'Dữ liệu sự kiện theo chuẩn quốc tế',
+    desc: 'Ghi nhận ai · ở đâu · khi nào · sự kiện gì · hình ảnh minh chứng trong toàn bộ chuỗi cung ứng.',
   },
   {
     index: '02',
     code: 'NĐ 37/2026',
     title: 'Nhãn điện tử',
-    desc: 'Nhóm hàng hoá & trường bắt buộc theo Phụ lục I, bung tự động.',
+    desc: 'Tự động hiển thị các trường thông tin bắt buộc theo từng nhóm hàng hóa.',
   },
   {
     index: '03',
     code: 'NĐ 43/2017',
-    title: 'Ghi nhãn hàng hoá',
-    desc: 'Nhãn phụ tiếng Việt, hiển thị cho người tiêu dùng như một phần của nhãn điện tử.',
+    title: 'Ghi nhãn hàng hóa',
+    desc: 'Hỗ trợ nhãn phụ tiếng Việt và hiển thị thông tin cần thiết cho người tiêu dùng.',
   },
   {
     index: '04',
-    code: 'CỔNG QG',
-    title: 'Đồng bộ xác thực',
-    desc: 'Đồng bộ lên Cổng truy xuất nguồn gốc quốc gia & Hệ thống Nhãn điện tử Quốc gia.',
+    code: 'CỔNG QUỐC GIA',
+    title: 'Đồng bộ & xác thực',
+    desc: 'Đồng bộ dữ liệu với Cổng truy xuất nguồn gốc quốc gia và Hệ thống Nhãn điện tử Quốc gia.',
   },
 ]
 
@@ -43,13 +43,8 @@ export function VideoSection() {
           <SectionHeading
             className="mb-10 lg:mb-14"
             eyebrow="06 · TUÂN THỦ & TÍCH HỢP QUỐC GIA"
-          title={
-            <>
-              Chuẩn quốc tế,
-              <br className="hidden lg:block" /> tuân thủ nội địa.
-            </>
-          }
-            desc={"Mỗi sự kiện được ký và đồng bộ lên Cổng truy xuất nguồn gốc quốc gia và Hệ thống Nhãn điện tử Quốc gia."}
+            title="Đáp ứng quy định, kết nối hệ thống quốc gia."
+            desc="Dữ liệu được xác thực và đồng bộ với Cổng truy xuất nguồn gốc quốc gia và Hệ thống Nhãn điện tử Quốc gia."
           />
         </AnimateIn>
         <AnimateIn delay={100}>

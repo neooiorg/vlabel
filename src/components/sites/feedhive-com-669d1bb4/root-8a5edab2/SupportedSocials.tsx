@@ -46,14 +46,9 @@ export function SupportedSocials() {
       <div className="mx-auto max-w-[1188px]">
         <SectionHeading
           className="mb-10 lg:mb-14"
-          eyebrow="04 · CHO MỌI VAI TRÒ · PHÂN QUYỀN"
-          title={
-            <>
-              Mỗi vai trò
-              <br className="hidden lg:block" /> một phạm vi quyền.
-            </>
-          }
-          desc="Mỗi vai trò chỉ thao tác trong phạm vi được giao — không hơn, không kém."
+          eyebrow="04 · PHÂN QUYỀN THEO VAI TRÒ"
+          title="Quyền hạn rõ ràng theo từng vai trò."
+          desc="Mỗi người chỉ được truy cập và thao tác trong phạm vi được cấp quyền."
         />
 
         <AnimateIn delay={80}>

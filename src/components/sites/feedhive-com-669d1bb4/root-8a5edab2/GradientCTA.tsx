@@ -6,7 +6,7 @@ import { SectionHeading } from './SectionHeading'
 
 const bullets = [
   'Một QR: truy xuất + nhãn điện tử + nhãn phụ + doanh nghiệp',
-  'Chuẩn GS1 EPCIS + tuân thủ NĐ 37/43, có sẵn',
+  'Chuẩn GS1 EPCIS + tuân thủ NĐ 37/2026 & NĐ 43/2017, có sẵn',
   'Đa khách hàng cho địa phương, kê khai offline cho thực địa',
 ]
 

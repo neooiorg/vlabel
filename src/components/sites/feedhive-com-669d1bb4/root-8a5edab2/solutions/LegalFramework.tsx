@@ -4,9 +4,9 @@ import { Globe, FileText, Cpu } from 'lucide-react'
 const IMG = '/sites/feedhive-com-669d1bb4/root-8a5edab2/images'
 
 const refs = [
-  { icon: FileText, label: 'Nhãn điện tử', value: 'elabel.gov.vn' },
-  { icon: Globe,    label: 'Cổng quốc gia', value: 'truyxuatnguongoc.gov.vn' },
-  { icon: Cpu,      label: 'Chuẩn kỹ thuật', value: 'TCVN 12850 · GS1' },
+  { icon: FileText, label: 'Hệ thống Nhãn điện tử Quốc gia', value: 'elabel.gov.vn' },
+  { icon: Globe,    label: 'Cổng truy xuất nguồn gốc quốc gia', value: 'truyxuatnguongoc.gov.vn' },
+  { icon: Cpu,      label: 'Tiêu chuẩn truy xuất', value: 'TCVN 12850 · GS1' },
 ]
 
 export function LegalFramework() {
@@ -18,28 +18,27 @@ export function LegalFramework() {
           {/* Left — content */}
           <div>
             <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.1em] text-[#4457ff]">
-              05 · Khung pháp lý
+              05 · KHUNG PHÁP LÝ
             </p>
             <h2
-              className="text-[34px] font-medium leading-[1.1] tracking-[-0.03em] text-[#20232b] lg:text-[42px]"
+              className="text-[34px] font-medium leading-[1.12] tracking-[-0.03em] text-[#20232b] lg:text-[46px]"
               style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
             >
-              Tuân thủ pháp luật,
-              <br /> không cần tự lo.
+              Tuân thủ đúng quy định, triển khai đúng chuẩn.
             </h2>
             <p className="mt-4 max-w-[480px] text-[15px] leading-[1.6] text-[#4f5562]">
-              Doanh nghiệp không phải tự nghiên cứu quy định. Vlabel triển khai đúng yêu cầu pháp luật và đồng bộ hệ thống quốc gia.
+              Vlabel hỗ trợ doanh nghiệp chuẩn hóa nhãn, dữ liệu truy xuất và kết nối với các hệ thống quốc gia theo quy định hiện hành.
             </p>
 
             <div className="mt-7 space-y-2">
               {/* Featured: NĐ 37 */}
               <div className="rounded-[14px] bg-[#eef0ff] px-5 py-4">
-                <p className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#4457ff]">Căn cứ chính</p>
+                <p className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#4457ff]">Căn cứ triển khai</p>
                 <p
                   className="mt-1 text-[18px] font-semibold tracking-[-0.02em] text-[#20232b]"
                   style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
                 >
-                  Nghị định 37/2026/NĐ-CP
+                  Nghị định 37/2026/NĐ-CP — Quy định về nhãn điện tử
                 </p>
               </div>
 
@@ -64,14 +63,11 @@ export function LegalFramework() {
                   <path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 <span className="text-[12px] font-medium leading-[1.5] text-[#92650a]">
-                  Hiệu lực 23.01.2026 (NĐ 37) — khác với 01.07.2026 (TT 31)
+                  Mốc áp dụng: NĐ 37/2026 và TT 31/2026 áp dụng theo thời điểm hiệu lực tương ứng.
                 </span>
               </div>
             </div>
 
-            <p className="mt-3 text-[11px] leading-[1.6] text-[#b0b4bf]">
-              Đối chiếu toàn văn NĐ 37/2026 trước khi công bố chính thức.
-            </p>
           </div>
 
           {/* Right — image */}

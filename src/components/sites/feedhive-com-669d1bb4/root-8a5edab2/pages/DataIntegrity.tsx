@@ -12,30 +12,30 @@ const stages: Stage[] = [
   {
     index: '01',
     title: 'Kê khai',
-    desc: 'Cán bộ nhập dữ liệu cho từng Sự kiện, kể cả offline khi ở nhà máy, vùng trồng hay kho.',
+    desc: 'Nhập dữ liệu cho từng sự kiện, kể cả khi kết nối mạng không ổn định.',
   },
   {
     index: '02',
     title: 'Duyệt',
-    desc: 'Quản lý rà soát, đối chiếu và phê duyệt dữ liệu trước khi công bố ra ngoài.',
+    desc: 'Quản lý kiểm tra và xác nhận dữ liệu trước khi công bố.',
   },
   {
     index: '03',
     title: 'Khoá',
-    desc: 'Sự kiện được khoá để đảm bảo toàn vẹn — dữ liệu đã ký không thể sửa lén.',
+    desc: 'Dữ liệu sau khi xác nhận được khoá và lưu vết, hạn chế chỉnh sửa ngoài quy trình.',
   },
 ]
 
 export function DataIntegrity() {
   return (
-    <section className="bg-[#f7f8fb] px-4 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-20 lg:px-8 lg:pb-[92px] lg:pt-[92px]">
+    <section className="bg-white px-4 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-20 lg:px-8 lg:pb-[92px] lg:pt-[92px]">
       <div className="mx-auto max-w-[1188px]">
         <AnimateIn>
           <SectionHeading
             className="mb-12 lg:mb-16"
             eyebrow="TOÀN VẸN DỮ LIỆU"
-          title="Kê khai · Duyệt · Khoá."
-            desc="Ba lớp bảo vệ để dữ liệu hiển thị cho người tiêu dùng luôn đáng tin. Mỗi bước tuân thủ nguyên tắc một bước trước, một bước sau theo TCVN 12850."
+            title="Kê khai · Duyệt · Khoá."
+            desc="Ba bước kiểm soát giúp dữ liệu được kiểm tra, xác nhận và bảo vệ trước khi công bố. Quy trình hỗ trợ nguyên tắc truy xuất một bước trước, một bước sau theo TCVN 12850."
           />
         </AnimateIn>
 

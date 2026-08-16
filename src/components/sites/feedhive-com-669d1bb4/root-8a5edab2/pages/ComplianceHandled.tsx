@@ -10,7 +10,7 @@ interface Item {
 const items: Item[] = [
   {
     icon: Tag,
-    title: 'Áp đúng nhóm hàng hoá & trường bắt buộc',
+    title: 'Đúng nhóm hàng hóa & trường thông tin',
     ref: 'NĐ 37/2026',
   },
   {
@@ -20,18 +20,18 @@ const items: Item[] = [
   },
   {
     icon: GitBranch,
-    title: 'Chuẩn hoá sự kiện truy xuất',
+    title: 'Chuẩn hóa dữ liệu truy xuất',
     ref: 'GS1 EPCIS · TCVN 12850',
   },
   {
     icon: Globe,
-    title: 'Đồng bộ Cổng quốc gia & Hệ thống Nhãn điện tử',
-    ref: 'truyxuatnguongoc.gov.vn',
+    title: 'Kết nối hệ thống quốc gia',
+    ref: 'Cổng truy xuất nguồn gốc & Hệ thống Nhãn điện tử',
   },
   {
     icon: RefreshCw,
-    title: 'Tự cập nhật khi quy định thay đổi',
-    ref: 'Không cần doanh nghiệp theo dõi',
+    title: 'Cập nhật khi quy định thay đổi',
+    ref: 'Giảm công việc theo dõi và điều chỉnh thủ công cho doanh nghiệp.',
   },
 ]
 
@@ -42,14 +42,9 @@ export function ComplianceHandled() {
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
           <SectionHeading
             align="left"
-            eyebrow="VLABEL LO PHẦN KHÓ"
-            title={
-              <>
-                Không phải tự
-                <br className="hidden lg:block" /> nghiên cứu luật.
-              </>
-            }
-            desc="Quy định ghi nhãn và truy xuất thay đổi liên tục. Vlabel triển khai đúng yêu cầu pháp luật và đồng bộ hệ thống quốc gia — doanh nghiệp chỉ tập trung vào sản phẩm."
+            eyebrow="VLABEL LO PHẦN KỸ THUẬT"
+            title="Không cần tự theo dõi từng quy định."
+            desc="Vlabel hỗ trợ doanh nghiệp chuẩn hóa dữ liệu, ghi nhãn và kết nối hệ thống quốc gia theo các yêu cầu áp dụng."
           />
 
           <div className="overflow-hidden rounded-[15px] bg-[#ebebef]">

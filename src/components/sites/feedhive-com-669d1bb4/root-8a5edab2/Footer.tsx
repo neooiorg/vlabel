@@ -76,7 +76,7 @@ export function Footer() {
             <div className="col-span-2 lg:col-span-1">
               <Logo />
               <p className="mt-3 text-[12px] font-semibold uppercase tracking-[0.08em] text-[#4457ff]">
-                Số hóa niềm tin
+                Minh bạch từ QR đến nguồn gốc
               </p>
               <p className="mt-2 max-w-[280px] text-[14px] leading-[1.6] text-[#4f5562]">
                 Nền tảng Nhãn điện tử &amp; Truy xuất nguồn gốc đa khách hàng cho doanh nghiệp và địa

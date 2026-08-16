@@ -32,13 +32,12 @@ export function SolutionHero() {
             className="text-[38px] font-medium leading-[1.06] tracking-[-0.035em] text-[#23252b] lg:text-[50px]"
             style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
           >
-            Bốn gói,
+            Bốn gói
             <br />
-            <span className="text-[#4457ff]">một nền tảng.</span>
+            <span className="text-[#4457ff]">trong một nền tảng.</span>
           </h1>
           <p className="mt-5 max-w-[520px] text-[16px] leading-[1.6] text-[#4f5562]">
-            Mọi gói đều có nhãn điện tử đúng luật và đồng bộ cổng quốc gia. Khác nhau ở mức tùy biến và
-            trải nghiệm thương hiệu. Chọn theo quy mô của bạn.
+            Mỗi gói đều hỗ trợ nhãn điện tử theo quy định và đồng bộ với hệ thống quốc gia. Khác biệt ở mức độ tùy chỉnh, tính năng và trải nghiệm thương hiệu, phù hợp với từng quy mô triển khai.
           </p>
 
           {/* Pill sub-nav */}

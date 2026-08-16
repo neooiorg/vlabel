@@ -29,13 +29,13 @@ const panels: Panel[] = [
   },
   {
     label: 'DI ĐỘNG · iOS / ANDROID',
-    title: 'Kê khai thực địa trên điện thoại.',
-    subtitle: 'Cho kê khai & giám sát thực địa',
+    title: 'Cập nhật và theo dõi ngay trên điện thoại.',
+    subtitle: 'Dành cho nhân sự vận hành & giám sát',
     bullets: [
-      'Danh sách công việc được giao, quét QR',
-      'Ghi Sự kiện kèm hình ảnh minh chứng & GPS',
-      'Luồng quản lý: trợ lý, bản đồ hành trình',
-      'Thông báo đẩy nhắc việc',
+      'Xem công việc được giao, quét mã QR',
+      'Ghi nhận sự kiện kèm hình ảnh và vị trí GPS',
+      'Theo dõi tiến độ và hành trình sản phẩm',
+      'Nhận thông báo và nhắc việc kịp thời',
     ],
     image: '/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-mobile-app-v2.png',
     alt: 'Ứng dụng di động Vlabel — kê khai thực địa, ghi sự kiện kèm GPS, bản đồ hành trình',
@@ -51,13 +51,8 @@ export function FeatureShowcase() {
           <SectionHeading
             className="mb-12"
             eyebrow="05 · WEB + DI ĐỘNG"
-          title={
-            <>
-              Quản trị trên web,
-              <br className="hidden lg:block" /> thực địa trên điện thoại.
-            </>
-          }
-            desc="Hỗ trợ thực địa nơi mạng yếu: nhà máy, vùng trồng, kho."
+            title="Quản lý trên web, cập nhật trên điện thoại."
+            desc="Dễ dàng sử dụng tại nhà máy, vùng trồng và kho, kể cả khi kết nối mạng yếu."
           />
         </AnimateIn>
         <div className="divide-y divide-black/5">
@@ -80,7 +75,7 @@ export function FeatureShowcase() {
                   className="h-auto w-full"
                 />
               </div>
-              <div>
+              <div className={!panel.imageLeft ? 'lg:justify-self-end' : ''}>
                 <p className="mb-2 text-[11px] font-bold uppercase tracking-[0.1em] text-[#4457ff]">
                   {panel.label}
                 </p>

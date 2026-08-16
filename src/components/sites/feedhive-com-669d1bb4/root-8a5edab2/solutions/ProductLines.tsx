@@ -76,14 +76,9 @@ export function ProductLines() {
       <div className="mx-auto max-w-[1188px]">
         <SectionHeading
           className="mb-10 lg:mb-14"
-          eyebrow="02 · SẢN PHẨM · BỐN DÒNG"
-          title={
-            <>
-              Bốn dòng cho
-              <br className="hidden lg:block" /> mọi quy mô.
-            </>
-          }
-          desc="Cùng một nền tảng đúng luật, khác nhau ở độ tùy biến và trải nghiệm thương hiệu. Giá cụ thể báo sau khảo sát nhu cầu."
+          eyebrow="GIẢI PHÁP & SẢN PHẨM"
+          title="Bốn gói trong một nền tảng."
+          desc="Mỗi gói đều hỗ trợ nhãn điện tử theo quy định và đồng bộ với hệ thống quốc gia. Khác biệt ở mức độ tùy chỉnh, tính năng và trải nghiệm thương hiệu, phù hợp với từng quy mô triển khai."
         />
 
         {/* Product cards — FeedHive pricing grammar */}

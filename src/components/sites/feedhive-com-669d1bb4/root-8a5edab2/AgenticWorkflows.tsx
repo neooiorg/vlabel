@@ -27,8 +27,8 @@ const bigCards: BigCard[] = [
   },
   {
     eyebrow: 'NHÃN ĐIỆN TỬ',
-    title: 'Nhãn điện tử',
-    desc: 'Soạn nhãn theo NĐ 37/2026, chọn nhóm hàng hoá để bung đúng trường bắt buộc. Quản lý lô, nháp → phát hành → thu hồi.',
+    title: 'Quản lý nhãn điện tử',
+    desc: 'Tạo nhãn theo NĐ 37/2026, tự động hiển thị trường bắt buộc theo nhóm hàng hóa. Quản lý theo lô từ nháp → phát hành → thu hồi.',
     image: `${IMG}/feature-elabel-v2.png`,
     alt: 'Soạn nhãn điện tử theo NĐ 37/2026, quản lý lô nháp phát hành thu hồi',
   },
@@ -41,21 +41,21 @@ const bigCards: BigCard[] = [
   },
   {
     eyebrow: 'HÀNH TRÌNH',
-    title: 'Bản đồ hành trình',
-    desc: 'Ba chế độ: bản đồ thực (OpenStreetMap), sơ đồ doanh nghiệp và dòng thời gian, có playback chạy tuần tự các điểm.',
+    title: 'Theo dõi hành trình sản phẩm',
+    desc: 'Xem hành trình theo bản đồ thực, sơ đồ quy trình hoặc dòng thời gian. Phát lại từng chặng để kiểm tra và trình bày dễ dàng.',
     image: `${IMG}/feature-journey-v2.png`,
     alt: 'Bản đồ hành trình ba chế độ: bản đồ thực, sơ đồ doanh nghiệp, dòng thời gian',
   },
 ]
 
 const miniRow1: MiniItem[] = [
-  { icon: Network, title: 'Đa khách hàng & cây đơn vị', desc: 'Một nền tảng, nhiều doanh nghiệp — cây đơn vị đa tầng cho địa phương.' },
-  { icon: Wand2, title: 'Trợ lý dẫn từng bước', desc: 'Wizard thiết lập truy xuất và soạn nhãn điện tử, tự lưu nháp.' },
+  { icon: Network, title: 'Đa khách hàng & phân cấp đơn vị', desc: 'Một nền tảng, nhiều doanh nghiệp — phân cấp đa tầng cho cả doanh nghiệp lẫn địa phương.' },
+  { icon: Wand2, title: 'Hướng dẫn từng bước', desc: 'Thiết lập truy xuất, tạo nhãn điện tử và tự động lưu nháp.' },
   { icon: WifiOff, title: 'Kê khai offline', desc: 'Ghi dữ liệu không cần mạng, tự đồng bộ khi có kết nối trở lại.' },
 ]
 
 const miniRow2: MiniItem[] = [
-  { icon: ShieldCheck, title: 'Phân quyền vai trò', desc: 'Kê khai · Quản lý · Admin · Superadmin — mỗi vai trò đúng phạm vi.' },
+  { icon: ShieldCheck, title: 'Đúng người, đúng quyền.', desc: 'Mỗi vai trò chỉ được truy cập và thao tác trong phạm vi được phân quyền.' },
   { icon: Globe, title: 'Đồng bộ cổng quốc gia', desc: 'Tự đẩy lên truyxuatnguongoc.gov.vn và elabel.gov.vn.' },
   { icon: ScrollText, title: 'Nhật ký kiểm toán', desc: 'Lịch sử đầy đủ: ai thay đổi gì, lúc nào — không thể xoá lén.' },
 ]
@@ -95,10 +95,10 @@ export function AgenticWorkflows() {
             02 · Sáu phân hệ · Một QR
           </p>
           <h2
-            className="mx-auto max-w-[860px] text-[32px] font-medium leading-[1.0] tracking-[-0.03em] text-[#23252b] sm:text-[44px] lg:text-[56px]"
+            className="mx-auto max-w-[860px] text-[34px] font-medium leading-[1.12] tracking-[-0.03em] text-[#20232b] lg:text-[46px]"
             style={{ fontFamily: 'var(--font-plus-jakarta-sans)' }}
           >
-            Sáu phân hệ dưới một mã QR.
+            Sáu phân hệ<br className="hidden lg:block" /> trong một mã QR.
           </h2>
         </div>
 

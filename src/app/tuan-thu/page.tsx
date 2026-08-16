@@ -24,12 +24,12 @@ export default function TuanThuPage() {
           eyebrow="TUÂN THỦ & TÍCH HỢP QUỐC GIA"
           title={
             <>
-              Đã xác thực,
+              Xác thực dữ liệu,
               <br />
-              <span className="text-[#4457ff]">đồng bộ quốc gia.</span>
+              <span className="text-[#4457ff]">kết nối hệ thống quốc gia.</span>
             </>
           }
-          desc="Mỗi sản phẩm mang dấu xác thực và được đồng bộ lên Cổng truy xuất nguồn gốc quốc gia. Phần tuân thủ pháp lý, để Vlabel lo."
+          desc="Dữ liệu sản phẩm được xác thực và đồng bộ với Cổng truy xuất nguồn gốc quốc gia. Vlabel hỗ trợ doanh nghiệp đáp ứng các yêu cầu pháp lý trong quá trình triển khai."
           image="/sites/feedhive-com-669d1bb4/root-8a5edab2/images/showcase-image-2-v3.png"
           imageAlt="Bản đồ hành trình sản phẩm đã xác thực"
         />
@@ -38,8 +38,8 @@ export default function TuanThuPage() {
         <LegalFramework />
         <PageCTA
           eyebrow="BẮT ĐẦU"
-          title="Kiểm tra sản phẩm của bạn cần tuân thủ gì."
-          desc="Gửi nhóm hàng hoá, Vlabel kiểm tra yêu cầu pháp lý và đề xuất cách triển khai."
+          title="Kiểm tra yêu cầu áp dụng cho sản phẩm của bạn."
+          desc="Gửi thông tin nhóm hàng hóa, Vlabel sẽ xác định yêu cầu cần tuân thủ và đề xuất phương án triển khai phù hợp."
           buttonLabel="Nhận tư vấn"
         />
       </main>
